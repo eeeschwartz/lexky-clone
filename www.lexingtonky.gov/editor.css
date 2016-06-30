@@ -95,7 +95,7 @@ table.tableData
 	text-decoration: underline;
 	display: block;
 	padding-left: 15px;
-	background: url(http://www.lexingtonky.gov/_gfx/home/event_bullet.gif) 0 6px no-repeat;
+	background: url(_gfx/home/event_bullet.gif) 0 6px no-repeat;
 }
 
 .sidebar p a:hover{

@@ -30,7 +30,7 @@ a.dropdownitemlevel1, a.dropdownitemhaschildlevel1, a.dropdownitemlevel2
 	color:#fff;
 	cursor: pointer;
 	line-height: 20px !important;
-	background: #0b47ads url(http://www.lexingtonky.gov/_gfx/nav/dropdown_bg.gif) top center no-repeat;
+	background: #0b47ads url(_gfx/nav/dropdown_bg.gif) top center no-repeat;
 	text-decoration:none;
 }
 
@@ -42,7 +42,7 @@ a.dropdownitemlevel1, a.dropdownitemhaschildlevel1, a.dropdownitemlevel2
 }
 
 a:hover.dropdownitemlevel1, a:hover.dropdownitemhaschildlevel1, a:hover.dropdownitemlevel2{
-	background: #2a6fbd url(http://www.lexingtonky.gov/_gfx/nav/dropdown_over.jpg) 0 0 repeat-x;
+	background: #2a6fbd url(_gfx/nav/dropdown_over.jpg) 0 0 repeat-x;
 	text-decoration:none;
 	color: #fff;
 }

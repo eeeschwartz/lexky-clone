@@ -254,7 +254,7 @@ Header: contains search, top links, site logo
 	/*position: relative;*/
 	padding-top: 0px;
 	width: 100%;
-	background: url(http://www.lexingtonky.gov/_gfx/cmn/header_wrap_bg.gif) 0 0 repeat-x;
+	background: url(_gfx/cmn/header_wrap_bg.gif) 0 0 repeat-x;
 }
 
 .printonly {
@@ -312,7 +312,7 @@ Header: contains search, top links, site logo
 {
 	position: relative;
 	width: 100%;
-	background: url(http://www.lexingtonky.gov/_gfx/cmn/header_wrap_bg.gif) 0 0 no-repeat;
+	background: url(_gfx/cmn/header_wrap_bg.gif) 0 0 no-repeat;
 }
 
 .header_nav
@@ -359,7 +359,7 @@ Header: contains search, top links, site logo
 	left: 756px;
 	width: 200px;
 	height: 41px;
-	background: url(http://www.lexingtonky.gov/_gfx/cmn/search_bg.gif) 0 0 no-repeat;
+	background: url(_gfx/cmn/search_bg.gif) 0 0 no-repeat;
 }
 
 .searchbox_textbox
@@ -409,7 +409,7 @@ Content section
 	float: left;
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/container_bg.gif) 0 0 repeat-x;
+	background: url(_gfx/int/container_bg.gif) 0 0 repeat-x;
 }
 
 
@@ -428,7 +428,7 @@ Content section
 	width: 670px;
 	margin: 0px;
 	padding: 0px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/cont_header_bg.jpg) 0 0 repeat-x;
+	background: url(_gfx/int/cont_header_bg.jpg) 0 0 repeat-x;
 }
 
 .image_banner
@@ -509,7 +509,7 @@ Content section
 {
 	width:100%;
 	margin: 0px 0px 0px 20px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/title_bg.gif) 0 bottom no-repeat;
+	background: url(_gfx/int/title_bg.gif) 0 bottom no-repeat;
 }
 
 .contentheader_banner .title
@@ -517,7 +517,7 @@ Content section
 	display:inline-table;
 	width: 100%;
 	padding: 0px 0px 0px 0px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/title_bg.gif) 0 bottom no-repeat;
+	background: url(_gfx/int/title_bg.gif) 0 bottom no-repeat;
 }
 
 .title_right
@@ -661,7 +661,7 @@ Content section
 	padding: 0px 10px 100px 20px;
 	font-family: Verdana, Arial, Trebuchet MS, Helvetica, sans-serif;
 	font-size: 13px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/content_bg.jpg) 0 bottom no-repeat;
+	background: url(_gfx/int/content_bg.jpg) 0 bottom no-repeat;
 }
 
 .content a {
@@ -708,7 +708,7 @@ Content section
 .downloadmessage
 {
 	clear: left;
-	background: #fff url(http://www.lexingtonky.gov/_gfx/int/download_bg.gif) top center repeat-x;
+	background: #fff url(_gfx/int/download_bg.gif) top center repeat-x;
 	border:solid 1px #72a8d4;
 	text-align:center;
 	width: 466px;
@@ -733,7 +733,7 @@ Content section
 
 .last_updated
 {
-	background: url(http://www.lexingtonky.gov/_gfx/cmn/updated.gif) top center no-repeat;
+	background: url(_gfx/cmn/updated.gif) top center no-repeat;
 	width: 90%;	
     color:#aba28f;
     font-size:9px;
@@ -888,7 +888,7 @@ Content section
 	width: 962px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/cont_header_bg.gif) 0 0 repeat-x;
+	background: url(_gfx/int/cont_header_bg.gif) 0 0 repeat-x;
 	
 }
 
@@ -914,7 +914,7 @@ Content section
 	width:100%;
 	margin: 0px 0px 20px 0px;
 	float: left;
-	background: url(http://www.lexingtonky.gov/_gfx/int/title_noleft_bg.gif) 0 bottom no-repeat;
+	background: url(_gfx/int/title_noleft_bg.gif) 0 bottom no-repeat;
 }
 
 .mainSpan_wrapper_noleftnav .title_left
@@ -957,7 +957,7 @@ Content section
 	width: 962px;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/cont_bg_noleft.jpg) 0 0 no-repeat;
+	background: url(_gfx/int/cont_bg_noleft.jpg) 0 0 no-repeat;
 	
 }
 
@@ -1053,7 +1053,7 @@ Content section
 .mainSpan_wrapper_review .component_title_review
 {
 	margin: 0px;	
-	background: url(http://www.lexingtonky.gov/_gfx/int/contentheader_noleftbg.gif) top left no-repeat;
+	background: url(_gfx/int/contentheader_noleftbg.gif) top left no-repeat;
 	width: 962px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size:18px;
@@ -1209,7 +1209,7 @@ Left navigation
 {
 	float: left;
 	padding: 0px 0px 200px 0px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/leftnav_cont_bg.gif) 0 0 no-repeat;
+	background: url(_gfx/int/leftnav_cont_bg.gif) 0 0 no-repeat;
 }
 
 .leftnav
@@ -1220,7 +1220,7 @@ Left navigation
 	padding: 0px 0 0px 0;
 	font-size:13px;
 	font-family: Arial, Trebuchet MS, Helvetica, Sans-Serif;
-	background: url(http://www.lexingtonky.gov/_gfx/nav/leftnav_top.gif) 0 0 no-repeat;
+	background: url(_gfx/nav/leftnav_top.gif) 0 0 no-repeat;
 }
 
 .leftnav a
@@ -1455,7 +1455,7 @@ table.menu_group
 .menuitem,
 .menuitem_top 
 {
-	background: #224d83 url(http://www.lexingtonky.gov/_gfx/nav/dropdown_bg.gif) top center no-repeat;
+	background: #224d83 url(_gfx/nav/dropdown_bg.gif) top center no-repeat;
 	border-top: solid 1px #d5e9f4;
 	border-bottom: solid 1px #022043;
 }
@@ -1480,7 +1480,7 @@ table.menu_group
 .menuitem_active_top,
 .menuitem_expanded_top
 {
-	background: #937c0d url(http://www.lexingtonky.gov/_gfx/nav/dropdown_bg_over.gif) top center no-repeat;
+	background: #937c0d url(_gfx/nav/dropdown_bg_over.gif) top center no-repeat;
 	border-top:1px solid #d5e9f4;	
 	border-bottom:1px solid #022043;
 }
@@ -1573,7 +1573,7 @@ fieldset
 
 .form_button
 {
-	background: #7aafd9 url(http://www.lexingtonky.gov/_gfx/int/form_button.gif) top repeat-x;
+	background: #7aafd9 url(_gfx/int/form_button.gif) top repeat-x;
 	font-family:Tahoma, :0;
 	font-size: 11px;
 	font-weight:bold;
@@ -1599,7 +1599,7 @@ fieldset
 {
 	padding-left: 15px;
 	font-weight: bold;
-	background-image: url(http://www.lexingtonky.gov/_gfx/back_arrow.gif);
+	background-image: url(_gfx/back_arrow.gif);
 	background-repeat: no-repeat;
 	margin-bottom: 10px;
 }
@@ -1696,7 +1696,7 @@ Search
 	border-top:0px;
 	background-color:#f4f9fd;
 	text-decoration:none;
-	background-image:url(http://www.lexingtonky.gov/_gfx/cmn/search_link_bg.gif);
+	background-image:url(_gfx/cmn/search_link_bg.gif);
 	background-repeat: repeat-x;
 	_background-position:0 1px; /* for IE only */
 	font-size:10px; 
@@ -1891,7 +1891,7 @@ div.sort_items span.item
 {
 	margin: 0px 6px;
 	padding: 0 0 0 18px;
-	background-image: url(http://www.lexingtonky.gov/_gfx/cmn/searchbullet.gif);
+	background-image: url(_gfx/cmn/searchbullet.gif);
 	background-repeat: no-repeat;
 }
 
@@ -2247,7 +2247,7 @@ Link List
 .link_name a
 {
     padding-left:10px;
-    background-image:url(http://www.lexingtonky.gov/_gfx/cmn/link_list_arrow.gif);
+    background-image:url(_gfx/cmn/link_list_arrow.gif);
     background-repeat:no-repeat;
     background-position: 0 4px;
 }
@@ -2373,7 +2373,7 @@ Lists, including DataGrid classes
 
 .listtable_buttoncolumn input
 {
-	background-image: url(http://www.lexingtonky.gov/_gfx/button_bg.gif);
+	background-image: url(_gfx/button_bg.gif);
 	font-size: 10px;
 	padding: 2px;
 	color: #000;
@@ -2482,7 +2482,7 @@ Image-using item list
 
 .righttable_buttoncolumn input
 {
-	background-image: url(http://www.lexingtonky.gov/_gfx/button_bg.gif);
+	background-image: url(_gfx/button_bg.gif);
 	font-size: 10px;
 	padding: 4px;
 	color: #000000;
@@ -2601,7 +2601,7 @@ FAQ List
 	border:1px solid #bcb599;
 	background-color:#f4f9fd;
 	text-decoration:none;
-	background-image:url(http://www.lexingtonky.gov/_gfx/cmn/search_link_bg.gif);
+	background-image:url(_gfx/cmn/search_link_bg.gif);
 	background-repeat: repeat-x;
 	_background-position:0 1px; /* for IE only */
 	font-size:13px; 
@@ -2741,7 +2741,7 @@ Department boxes
 	border: 1px solid #00639c;
 	font-size:10px;
 	line-height:12px;
-	background: url(http://www.lexingtonky.gov/_gfx/int/deptbox_bg.gif) top center no-repeat;
+	background: url(_gfx/int/deptbox_bg.gif) top center no-repeat;
 	/*float:left;*/
 }
 
@@ -2865,7 +2865,7 @@ Photo Album
 .photo_thumb
 {
     background-position: top center;
-    background-image: url(http://www.lexingtonky.gov/_gfx/album/single_photo.gif);
+    background-image: url(_gfx/album/single_photo.gif);
     overflow: hidden;
     width:240px;
     height:240px;
@@ -2897,7 +2897,7 @@ Photo Album
     font-weight:bold;
     font-size:smaller;
     width:140px;
-	background: #082956 url(http://www.lexingtonky.gov/_gfx/int/form_button.gif) top repeat-x;
+	background: #082956 url(_gfx/int/form_button.gif) top repeat-x;
    	border: 1px solid #031b37;
  text-align:left;
     margin:0px 0px 0px 10px;
@@ -2908,7 +2908,7 @@ Photo Album
     display:block;
     padding:4px 3px 4px 27px;
 	color: #fafafa;
-    background-image:url(http://www.lexingtonky.gov/_gfx/album/slideshow.gif);
+    background-image:url(_gfx/album/slideshow.gif);
     background-repeat:no-repeat;
     background-position:7px 7px;
     font-size:9px;
@@ -3258,11 +3258,11 @@ Home Page
 	margin: 20px 0px 0px 25px;
 	width: 178px;
 	height: 30px;
-	background: url(http://www.lexingtonky.gov/_gfx/home/click_infoBtn.gif) 0 0 no-repeat;
+	background: url(_gfx/home/click_infoBtn.gif) 0 0 no-repeat;
 }
 .click_infoBtn a:hover
 {
-	background: url(http://www.lexingtonky.gov/_gfx/home/click_infoBtn.gif) 0 -30px no-repeat;
+	background: url(_gfx/home/click_infoBtn.gif) 0 -30px no-repeat;
 }
 
 .didyou
@@ -3273,7 +3273,7 @@ Home Page
 	left: 544px;
 	height: 87px;
 	overflow: hidden;
-	background: url(http://www.lexingtonky.gov/_gfx/home/didyou.gif);
+	background: url(_gfx/home/didyou.gif);
 }
 
 
@@ -3429,7 +3429,7 @@ Home boxes
 	color: #464749;	
     font-size:11px;
 	overflow: hidden;
-	background: url(http://www.lexingtonky.gov/_gfx/home/home_events_box_list.jpg) 0 0 no-repeat;
+	background: url(_gfx/home/home_events_box_list.jpg) 0 0 no-repeat;
 }
 
 .home_events .box_title
@@ -3443,7 +3443,7 @@ Home boxes
 }
 
 .home_events .box_title{
-	background: url(http://www.lexingtonky.gov/_gfx/home/home_events_top.gif) 0 0 no-repeat;
+	background: url(_gfx/home/home_events_top.gif) 0 0 no-repeat;
 	display:block;
 	padding: 0px 0 0 0;
 	height: 50px;
@@ -3462,7 +3462,7 @@ Home boxes
 	color: #27292a;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 18px;
-	background: url(http://www.lexingtonky.gov/_gfx/home/bullet.gif) 0 5px no-repeat;
+	background: url(_gfx/home/bullet.gif) 0 5px no-repeat;
 }
 
 .home_events .box_item_title a{
@@ -3500,7 +3500,7 @@ Home boxes
 	padding: 0px 10px 0px 0px;
 	overflow: hidden;
 	text-align: right;
-	background: url(http://www.lexingtonky.gov/_gfx/home/home_events_box_bottom.jpg) 0 0 no-repeat;
+	background: url(_gfx/home/home_events_box_bottom.jpg) 0 0 no-repeat;
 }
 
 
@@ -3561,7 +3561,7 @@ Home boxes
 }
 
 .home_news .box_title{
-	background: url(http://www.lexingtonky.gov/_gfx/home/home_news_top.gif) 0 0 no-repeat;
+	background: url(_gfx/home/home_news_top.gif) 0 0 no-repeat;
 	display:block;
 	padding: 0px 0 0 0;
 	overflow: hidden;
@@ -3578,7 +3578,7 @@ Home boxes
 	padding: 0px 0px 0px 0px;
 	color: #464749;	
     font-size:11px;
-	background: url(http://www.lexingtonky.gov/_gfx/home/home_news_box_list.jpg) 0 0 no-repeat;
+	background: url(_gfx/home/home_news_box_list.jpg) 0 0 no-repeat;
 	overflow: hidden;
 }
 
@@ -3595,7 +3595,7 @@ Home boxes
 	color: #27292a;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 18px;
-	background: url(http://www.lexingtonky.gov/_gfx/home/home_box_bullet.gif) 15px 12px no-repeat;
+	background: url(_gfx/home/home_box_bullet.gif) 15px 12px no-repeat;
 	border-bottom: 1px dotted #65696e;
 }
 
@@ -3650,7 +3650,7 @@ Home boxes
 	margin: 10px 0px 0px 0px;
 	padding: 0px 10px 0px 0px;
 	overflow: hidden;
-	background: url(http://www.lexingtonky.gov/_gfx/home/home_events_box_bottom.jpg) 0 0 no-repeat;
+	background: url(_gfx/home/home_events_box_bottom.jpg) 0 0 no-repeat;
 }
 
 
@@ -3987,11 +3987,11 @@ span.sIFR-alternate
 	width: 191px;
 	height: 123px;
 	margin: 12px 0px 0px 8px;
-	background: url(http://www.lexingtonky.gov/_gfx/home/eSignup.jpg) 0 0 no-repeat;
+	background: url(_gfx/home/eSignup.jpg) 0 0 no-repeat;
 }
 .eSignup a:hover
 {
-	background: url(http://www.lexingtonky.gov/_gfx/home/eSignup.jpg) 0 -123px no-repeat;
+	background: url(_gfx/home/eSignup.jpg) 0 -123px no-repeat;
 }
 
 .emergenC
@@ -4010,11 +4010,11 @@ span.sIFR-alternate
 	width: 191px;
 	height: 123px;
 	margin: 12px 0px 0px 8px;
-	background: url(http://www.lexingtonky.gov/_gfx/home/emergenC.jpg) 0 0 no-repeat;
+	background: url(_gfx/home/emergenC.jpg) 0 0 no-repeat;
 }
 .emergenC a:hover
 {
-	background: url(http://www.lexingtonky.gov/_gfx/home/emergenC.jpg) 0 -123px no-repeat;
+	background: url(_gfx/home/emergenC.jpg) 0 -123px no-repeat;
 }
 
 
