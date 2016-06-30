@@ -1,0 +1,239 @@
+/* Root Item images */
+
+/*IE6 ul width fix - ul becomes 100% width if you don't specific the widths*/
+.dropdownrootitem1ul{width:116px;}
+.dropdownrootitem2ul{width:105px;}
+.dropdownrootitem3ul{width:133px;}
+.dropdownrootitem4ul{width:110px;}
+.dropdownrootitem5ul{width:111px;}
+.dropdownrootitem6ul{width:109px;}
+.dropdownrootitem7ul{width:85px;}
+.dropdownrootitem8ul{width:193px;}
+/*IE6 ul width fix*/
+
+a.dropdownrootitem1,
+a.dropdownrootitem2,
+a.dropdownrootitem3,
+a.dropdownrootitem4,
+a.dropdownrootitem5,
+a.dropdownrootitem6,
+a.dropdownrootitem7,
+a.dropdownrootitem8,
+a.dropdownrootitem1_over,
+a.dropdownrootitem2_over,
+a.dropdownrootitem3_over,
+a.dropdownrootitem4_over,
+a.dropdownrootitem5_over,
+a.dropdownrootitem6_over,
+a.dropdownrootitem7_over,
+a.dropdownrootitem8_over
+{
+	display:block;
+	padding: 49px 0 0 0;
+	overflow: hidden;
+	height: 0px !important;
+	height /**/:49px;	
+}
+
+a:hover.dropdownrootitem1,
+a:hover.dropdownrootitem2,
+a:hover.dropdownrootitem3,
+a:hover.dropdownrootitem4,
+a:hover.dropdownrootitem5,
+a:hover.dropdownrootitem6,
+a:hover.dropdownrootitem7,
+a:hover.dropdownrootitem8,
+a:hover.dropdownrootitem1_over,
+a:hover.dropdownrootitem2_over,
+a:hover.dropdownrootitem3_over,
+a:hover.dropdownrootitem4_over,
+a:hover.dropdownrootitem5_over,
+a:hover.dropdownrootitem6_over,
+a:hover.dropdownrootitem7_over
+a:hover.dropdownrootitem8_over
+{
+	margin: 0;
+}
+
+
+a.dropdownrootitem1
+{
+	background:url(_gfx/nav/1.jpg) 0 0px no-repeat;
+	width:116px;
+}
+
+a:hover.dropdownrootitem1
+{
+	background:url(_gfx/nav/1.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem2
+{
+	background-image:url(_gfx/nav/2.jpg);
+	width:105px;
+}
+
+a:hover.dropdownrootitem2
+{
+	background:url(_gfx/nav/2.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem3
+{
+	background-image:url(_gfx/nav/3.jpg);
+	width:133px;
+}
+
+a:hover.dropdownrootitem3
+{
+	background:url(_gfx/nav/3.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem4
+{
+	background-image:url(_gfx/nav/4.jpg);
+	width:110px;
+}
+
+a:hover.dropdownrootitem4
+{
+	background:url(_gfx/nav/4.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem5
+{
+	background-image:url(_gfx/nav/5.jpg);
+	width:111px;
+}
+
+a:hover.dropdownrootitem5
+{
+	background:url(_gfx/nav/5.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem6
+{
+	background-image:url(_gfx/nav/6.jpg);
+	width:109px;
+}
+
+a:hover.dropdownrootitem6
+{
+	background:url(_gfx/nav/6.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem7
+{
+	background-image:url(_gfx/nav/7.jpg);
+	width:85px;
+}
+
+a:hover.dropdownrootitem7
+{
+	background:url(_gfx/nav/7.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem8
+{
+	background-image:url(_gfx/nav/8.jpg);
+	width:193px;
+}
+
+a:hover.dropdownrootitem8
+{
+	background:url(_gfx/nav/8.jpg) 0 -49px no-repeat;
+}
+
+/* Root Item images over - These classes are being used with javascript. */
+a.dropdownrootitem1_over
+{
+	background:url(_gfx/nav/1.jpg) 0 -49px no-repeat;
+	width:116px;
+}
+
+a:hover.dropdownrootitem1_over
+{
+	background:url(_gfx/nav/1.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem2_over
+{
+	background:url(_gfx/nav/2.jpg) 0 -49px no-repeat;
+	width:105px;
+}
+
+a:hover.dropdownrootitem2_over
+{
+	background:url(_gfx/nav/2.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem3_over
+{
+	background:url(_gfx/nav/3.jpg) 0 -49px no-repeat;
+	width:133px;
+}
+
+a:hover.dropdownrootitem3_over
+{
+	background:url(_gfx/nav/3.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem4_over
+{
+	background:url(_gfx/nav/4.jpg) 0 -49px no-repeat;
+	width:110px;
+}
+
+a:hover.dropdownrootitem4_over
+{
+	background:url(_gfx/nav/4.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem5_over
+{
+	background:url(_gfx/nav/5.jpg) 0 -49px no-repeat;
+	width:111px;
+}
+
+a:hover.dropdownrootitem5_over
+{
+	background:url(_gfx/nav/5.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem6_over
+{
+	background:url(_gfx/nav/6.jpg) 0 -49px no-repeat;
+	width:109px;
+}
+
+a:hover.dropdownrootitem6_over
+{
+	background:url(_gfx/nav/6.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem7_over
+{
+	background:url(_gfx/nav/7.jpg) 0 -49px no-repeat;
+	width:85px;
+}
+
+a:hover.dropdownrootitem7_over
+{
+	background:url(_gfx/nav/7.jpg) 0 -49px no-repeat;
+}
+
+a.dropdownrootitem8_over
+{
+	background:url(_gfx/nav/8.jpg) 0 -49px no-repeat;
+	width:193px;
+}
+
+a:hover.dropdownrootitem8_over
+{
+	background:url(_gfx/nav/8.jpg) 0 -49px no-repeat;
+}
+
+
+/* Root Item images over */
+
+/* Root Item images */

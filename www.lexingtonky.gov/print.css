@@ -1,0 +1,175 @@
+/********************************************
+This is the print style sheet,
+which defines which items will not be visible
+or have different formatting on printed pages.
+Customized for each project.
+*********************************************/
+html,body
+{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+body,td,th,p,select,input,a,em,strong,li,ul,span,table
+{
+	font-family: Georgia,Times,serif !important;
+	font-size: 19px !important;
+	line-height: 25px !important;
+	color: #000 !important;
+	background-image: none !important;
+	background-color: white !important;
+	text-align:left;
+}
+
+a
+{
+    color:#000 !important;
+    text-decoration:none !important;
+}
+    
+/*a:after { content:" [" attr(href) "]"; }*/
+
+a:link:after, a:visited:after {
+   content: "";
+}
+  
+table, .sidebar
+{
+    width:auto !important;
+    height:auto !important;
+    border:0 !important;
+    margin:0 !important;
+    padding:0 !important;
+}
+
+/* Hide the following things */
+.skipnav,
+.header_wrapper,
+.banner_holder,
+.breadcrumb,
+.last_updated,
+.printer_friendly,
+.downloadmessage,
+.mainSpan_wrapper_home .footer,
+.mainSpan_wrapper .footer,
+.mainSpan_wrapper_dept .footer,
+.mainSpan_wrapper_noleftnav .footer,
+.footer,
+.leftnav,
+.toolbox,
+.adminSpan,
+.dropdownmenu,
+.title_wrapper img,
+.filter,
+.depthome_right,
+.title_wrapper a,
+.forward_link_hyperlink,
+.forward_link,
+#dropdownmenu,
+
+.fix_intheight
+{
+	display:none !important;
+}
+
+.home_collage,
+.home_buttons,
+.home_right
+{
+	display:none !important;
+}
+
+.contentheader
+{
+	border:0px;
+	padding:0px;
+	margin:0px;	
+	/*UG*/
+	height: 50px;
+}
+
+div, span
+{
+    padding:0;
+    margin:0;
+    /*UG*/
+    /*float:none !important;*/
+}
+
+
+.contentheader h1
+{
+	font-size: 22px !important;
+	margin-bottom:20px !important;
+}
+
+.contentheader h2
+{
+    font-size: 16px !important;
+}
+
+.contentheader h1,
+.contentheader h2
+{
+	font-family: Trebuchet MS, Tahoma, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#000;
+    margin:0 0 10px 0;
+    padding:0;
+}
+
+.mainSpan,
+.mainSpan_wrapper,
+.mainSpan_wrapper_dept,
+.mainSpan_wrapper_noleftnav,
+.mainSpan_wrapper .container,
+.mainSpan_wrapper .width_container,
+.mainSpan_wrapper_dept .container,
+.mainSpan_wrapper_dept .width_container,
+.mainSpan_wrapper_noleftnav .container,
+.mainSpan_wrapper_noleftnav .width_container,
+.home_columns,
+.home_events,
+.home_news
+{
+	float: none !important;
+	width: 750px !important;
+	width: 600px; /* narrower for IE6 */
+	height:auto !important;
+	border:0;
+	overflow:visible;
+}
+
+.mainSpan_wrapper .content, 
+.mainSpan_wrapper_dept .content, 
+.mainSpan_wrapper_noleftnav .content
+{
+	background-color:#fff;
+	margin:0;
+	border:0;
+	padding:20px;
+	font-size: 16px;
+}
+
+.title h1, .sIFR-hasFlash h1, .sIFR-flash, .sIFR-flash object, .sIFR-flash embed
+{
+	display:block !important;
+	background-color:#fff !important;
+	font-size: 22px !important;
+	border:3px #000 !important;
+}
+
+.sIFR-flash, .sIFR-flash object, .sIFR-flash embed { display: none !important;height: 0;width: 0;position: absolute;overflow: hidden;}
+span.sIFR-alternate 
+{
+	visibility: visible !important;
+	display: block !important;
+	position: static !important;
+	left: auto !important;top: auto !important;
+	height: auto;
+	width: auto;
+	font-size: 22px !important;
+	line-height:26px !important;
+}

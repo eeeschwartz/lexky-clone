@@ -1,0 +1,4075 @@
+/************************************************
+This is the custom style sheet, containing styles
+that will be customized for each project.
+************************************************/
+
+/************************************************
+Base font style and size set here
+************************************************/
+body
+{
+	border: none;
+	margin: 0px;
+	padding: 0px 0 0 0px;
+	background: #2a6aa2 url(_gfx/cmn/site_bg_strip.jpg) center 0 repeat-x;
+	text-align: center;
+	font-family: Verdana;
+	font-size:  12px;
+}
+
+
+table img{
+	margin: 0px 10px 10px 10px;
+}
+
+table{
+	font-size: 11pt;
+}
+
+body,td,th,p,select,li,ul,input,blockquote,textarea
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;	
+	line-height:16px;
+	color: #6a655c;
+}
+
+a img
+{
+	border: 0px 0px 0px 0px;
+}
+
+a
+{
+	color:#aa790e;
+}
+
+a:hover
+{ 
+    text-decoration:none; 
+}
+
+/* Default error reporting style */
+.error_message
+{ 
+	color: #c60;
+	font-weight:bold;	
+}
+
+/* Use :after instead of clear:both because IE adds a space with clear:both */
+.clearfix:after, 
+.mainSpan:after, 
+.contentheader:after, 
+.content:after, 
+.container:after, 
+.title:after
+{ 
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.clearfix, 
+.mainSpan, 
+.contentheader, 
+.content, 
+.container,
+.title_right
+{
+	display:inline-block;
+}
+
+/* Hide from IE-mac \*/
+* html .clearfix,
+* html .mainSpan, 
+* html .contentheader, 
+* html.content, 
+* html.container, 
+* html.title_right
+{
+	height:1%;
+}
+
+.clearfix, .mainSpan, .contentheader, .content, .container, .title_right
+{
+	display:block;
+}
+/* End hide from IE-mac \*/
+
+
+/* Containing frame for the site */
+.mainSpan_wrapper_home, .mainSpan_wrapper, .mainSpan_wrapper_dept, .mainSpan_wrapper_noleftnav, .mainSpan_wrapper_review  {
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	background: url(_gfx/cmn/mainSpan_wrapper_bg.jpg) center 0 no-repeat;
+}
+
+.mainSpan
+{
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 962px;
+	margin: 0px auto 0px auto;
+	text-align:left;
+	z-index: 2;
+}
+
+
+
+
+
+
+
+/*********************************************
+		WIDTH CONTAINER &
+		CONTENT WRAPPER
+********************************************/
+.mainSpan_wrapper_home .width_container{
+	width: 962px;
+	margin: 0 0 0 0px;
+	padding: 0;
+	background: url(_gfx/home/width_cont_bg.gif) 0 0 repeat-y;
+}
+
+.mainSpan_wrapper .width_container{
+	width: 962px;
+	margin: 0 0 0 0px;
+	padding: 0;
+	background: url(_gfx/int/width_cont_bg.gif) 0 0 repeat-y;
+}
+
+.mainSpan_wrapper_noleftnav .width_container, .mainSpan_wrapper_review .width_container{
+	width: 962px;
+	margin: 0 0 0 0px;
+	padding: 0;
+	background: url(_gfx/int/width_cont_bg_noleft.gif) 0 0 repeat-y;
+}
+
+
+
+.mainSpan_wrapper_home .content_wrapper {
+	float: left;
+	width: 962px;
+	margin: 0px 0px 0px 0px;
+	/*background: url(_gfx/home/home_columns_bg.jpg) 0 286px no-repeat;*/
+}
+
+.mainSpan_wrapper .content_wrapper {
+	float: left;
+	width: 962px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url(_gfx/int/cont_wrap_bottom.jpg) 0 bottom no-repeat;
+}
+
+.mainSpan_wrapper_noleftnav .content_wrapper, .mainSpan_wrapper_review .content_wrapper
+{
+	float: left;
+	width: 962px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url(_gfx/home/columns_bg.jpg) 0 bottom no-repeat;
+}
+
+
+
+.mainSpan_wrapper_home .content_wrapper2 {
+	float: left;
+	width: 962px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: none;
+}
+
+.mainSpan_wrapper .content_wrapper2 {
+	float: left;
+	width: 962px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url(_gfx/int/cont_wrap_top.jpg) 0 0 no-repeat;
+}
+.mainSpan_wrapper_noleftnav .content_wrapper2, .mainSpan_wrapper_review .content_wrapper2
+{
+	float: left;
+	width: 962px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url(_gfx/int/cont_wrap_top_noleft.jpg) 0 0 no-repeat;
+}
+
+
+/* Section 508 skip navigation menu */
+.skipnav
+{ 
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    z-index:10;
+    display: none;
+}
+
+.skipnav img
+{
+    border:0px;
+    width:1px;
+    height:1px;
+    display:block;
+    float:left;
+}
+
+/* Container for admin control panel */
+.adminSpan
+{
+	width:200px;
+	float:right;
+	text-align:left;
+}
+
+.content iframe
+{
+	
+	width: 98%;
+	_width: 100%;
+	_margin-left: 20px;
+	border: none;
+}
+
+iframe.external_link
+{
+	background: none;
+}
+
+/************************************************
+Header: contains search, top links, site logo 
+************************************************/
+.header_wrapper
+{
+	/*
+	UG: This makes the drop down menu to render behind the image collage in the 
+	home page -do not position the header.-
+	*/
+	/*position: relative;*/
+	padding-top: 0px;
+	width: 100%;
+	background: url(http://www.lexingtonky.gov/_gfx/cmn/header_wrap_bg.gif) 0 0 repeat-x;
+}
+
+.printonly {
+	display: none;
+}
+
+.header
+{
+	position: relative;
+	width: 962px;
+	margin: 0px auto;
+	background: url(_gfx/cmn/header_bg.jpg) 0 0 no-repeat;
+	height: 129px;
+	font-size: 11px;
+	font-family: verdana;
+}
+
+.header_left
+{
+	float:left;
+	width: 290px;
+}
+
+
+.header_left a.home_link
+{
+	width: 320px;
+	position: absolute;
+	top: 30px;
+	display:block;
+	padding: 60px 0 0 50px;
+	overflow: hidden;
+	height: 0px !important;
+	height /**/:60px;
+	z-index: 1000;
+}
+
+.header_right
+{
+	float:right;
+	width:600px;
+}
+
+.header_logo
+{
+	height: 1px;
+	width: 1px;
+	border: none;
+}
+
+/* Top line of links */
+
+
+.header_nav_wrapper
+{
+	position: relative;
+	width: 100%;
+	background: url(http://www.lexingtonky.gov/_gfx/cmn/header_wrap_bg.gif) 0 0 no-repeat;
+}
+
+.header_nav
+{ 
+	
+	text-align: right;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 210px 0px 0px;
+	background: none;
+	float: right;
+	font-family: Arial, Trebuchet MS, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #a4caee;
+}
+
+.header_nav a
+{
+	color: #a4caee; 
+	text-decoration:none;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 5px 0px 5px;
+}
+
+.header_nav a:hover, .header_lang_switch a:hover
+{
+	color: #fff;
+	text-decoration:none;
+}
+
+.header_lang_switch{
+	float: left;
+	text-align: left;
+	padding: 6px 0px 0px 8px;
+	background: none;
+	width: 200px;
+}
+
+/* Container for search field and go button */
+.searchbox
+{ 
+	position: absolute;
+	top: 6px;
+	left: 756px;
+	width: 200px;
+	height: 41px;
+	background: url(http://www.lexingtonky.gov/_gfx/cmn/search_bg.gif) 0 0 no-repeat;
+}
+
+.searchbox_textbox
+{
+	float: left;
+	height: 14px;
+	padding: 3px 6px 3px 4px;
+	margin: 0px 0px 0px 0px;
+	font-size: 11px;
+	line-height: 11px;
+	background-color: #fff;
+	color: #b4b4b4;
+	border: 1px solid #c4c3c3;
+	width: 134px;
+	font-family: Arial, Trebuchet MS, arial;
+}
+
+.searchbox_button
+{
+	float:left;
+	margin: 0px 0px 0px 5px;
+}
+
+
+.quicklink 
+{
+    width:145px;
+    height: 18px;
+	font-size: 11px;
+	margin: 6px 11px 0 5px;
+	float: right;
+}
+
+.quicklink option 
+{
+    padding:2px;
+}
+
+
+/************************************************
+Content section
+************************************************/
+/* Page content container */
+.mainSpan_wrapper .container
+{ 
+	width: 670px;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/container_bg.gif) 0 0 repeat-x;
+}
+
+
+
+/* Contains breadcrumb, page title, printer friendly link */
+.contentheader
+{
+	display: inline-table;
+	width: 670px;
+	background: none;
+}
+
+.contentheader_banner
+{
+	display:inline-table;
+	width: 670px;
+	margin: 0px;
+	padding: 0px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/cont_header_bg.jpg) 0 0 repeat-x;
+}
+
+.image_banner
+{
+	display: block;
+}
+
+.breadcrumb_wrapper
+{
+	padding: 0px 3px 0px 0px;
+	margin: 5px 0px 0px 20px;
+	font-size: 11px;
+	background: none;
+	color: #6c6c6c;
+	float: left;
+	width: 95%;
+	font-family: Verdana, trebuchet ms, verdana;
+}
+
+.contentheader_banner .breadcrumb_wrapper
+{
+	padding: 0px 3px 0px 0px;
+	margin: 5px 0px 0px 20px;
+	font-size: 11px;
+	background: none;
+	color: #6c6c6c;
+	float: left;
+	width: 95%;
+	font-family: Verdana, trebuchet ms, verdana;
+}
+
+.breadcrumb{
+	margin-bottom: 0px;
+	width: 95%;
+}
+.breadcrumb a
+{ 
+	color: #6c6c6c;
+	text-decoration: underline;
+}
+
+.breadcrumb a:hover
+{
+	text-decoration: none;
+}
+
+.printer_friendly, .forward_link, .rss{
+    font-size:13px;
+	font-family: Arial, Verdana;
+    float:right;
+    height:24px;
+    text-align:left;
+}
+
+.printer_friendly{width:55px;}
+.forward_link{width:65px;}
+.rss{width:50px;}
+
+.printer_friendly a, .forward_link a, .rss a{
+    display:block;
+    padding-left:20px;
+    text-decoration:underline;
+    color: #5f8899;
+    height:24px;
+}
+
+.printer_friendly a{background: url(_gfx/int/print.gif) 0 0 no-repeat;}
+.forward_link a{background:url(_gfx/int/email.gif) 0 0 no-repeat;}
+.rss a{background:url(_gfx/int/rss.gif) 0 0 no-repeat;}
+
+.printer_friendly a:hover, .forward_link a:hover, .rss a:hover
+{
+	text-decoration:none;
+	color: #5f8899;
+}
+
+.title
+{
+	width:100%;
+	margin: 0px 0px 0px 20px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/title_bg.gif) 0 bottom no-repeat;
+}
+
+.contentheader_banner .title
+{
+	display:inline-table;
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/title_bg.gif) 0 bottom no-repeat;
+}
+
+.title_right
+{
+	text-align: right;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 30px 0px 0px;
+	float: right;
+	width: 30%;
+}
+
+.title_left{
+	float: left;
+	width: 95%;
+	margin: 0px 0px 5px 0px;
+	border-bottom: 1px solid #e0e3e5;
+}
+
+.font_size
+{
+	float: right;
+	font-size: 10px;
+	margin-top: -1px;
+	margin-left: 8px;
+}
+
+.font_size a
+{
+	padding-left:0px;
+    text-decoration:underline;
+    color: #e9ddb0;
+}
+.font_size a:hover
+{
+	color: #e9ddb0;
+	text-decoration: none;
+}
+
+/*
+.font_size span{
+	margin: 0 0 0px 5px;
+	line-height: 16px;
+	}
+	
+.font_size img{ vertical-align: middle; border: 0; margin-right: 5px;}
+*/
+
+
+.font_size div
+{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	float: left;
+	margin: 0px 2px 0px 2px;
+	border: solid 1px #4C8CC4;
+	padding: 0 0 2px 0;
+	text-align: center;
+}
+
+.font_size div.smallest
+{
+	font-size: 4px;
+}
+
+.font_size div.smaller
+{
+	font-size: 8px;
+}
+
+.font_size div.normal
+{
+	font-size: 10px;
+}
+
+.font_size div.larger
+{
+	font-size: 12px;
+}
+
+.font_size div.largest
+{
+	font-size: 12px;
+}
+
+
+
+.contentheader h1,
+.contentheader_banner h1
+{
+    padding:0px 15px 5px 0px;
+    margin: 10px 0px 0px 0px;
+	float: left;
+	width: 100%;
+	font-family: Trebuchet MS, sans-serif;
+	font-size:30px;
+	font-weight: normal;
+	color: #49494a;
+	line-height: 32px;
+}
+
+.mainSpan_wrapper_noleftnav .title_left h1{
+	padding:0px 15px 5px 0px;
+    margin: 10px 0px 0px 0px;
+	float: left;
+	width: 100%;
+	font-family: Trebuchet MS, sans-serif;
+	font-size:30px;
+	font-weight:normal;
+	color: #49494a;
+	line-height: 32px;
+}
+
+.contentheader h2,
+.contentheader_banner h2
+{
+        padding: 0px 0px 0px 1px;
+        margin: 0px 0px 0px 0px;
+	float: left;
+        width:550px;
+	font-family: Arial, Trebuchet MS, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:18px;
+	font-weight: bold;
+	color: #7c7f81;
+}
+
+.fix_intheight{ float: right; width: 0px; height: 300px;}
+
+/* Content: padding should be on content class NOT container */
+.mainSpan_wrapper_home .content
+{ 
+	padding: 0px 0px 0px 0px;
+}
+
+.mainSpan_wrapper .content
+{ 
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 100px 20px;
+	font-family: Verdana, Arial, Trebuchet MS, Helvetica, sans-serif;
+	font-size: 13px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/content_bg.jpg) 0 bottom no-repeat;
+}
+
+.content a {
+	color: #1a3cc4;
+	text-decoration: underline;
+}
+
+.content a:hover {
+	color: #1a3cc4;
+	text-decoration: none;
+}
+
+.content textarea
+{
+	width:525px;
+}
+
+.content p
+{
+	font-family: Arial, Trebuchet MS, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 19px;
+	color: #707376;
+	padding-right: 0px;
+}
+
+.content ul
+{
+	font-family: Arial, Trebuchet MS, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #707376;
+	padding:0px;
+	margin:8px 0 10px 20px;
+}
+
+.content ul li
+{
+	font-family: Arial, Trebuchet MS, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #707376;
+	padding: 2px 0px;
+}
+
+.downloadmessage
+{
+	clear: left;
+	background: #fff url(http://www.lexingtonky.gov/_gfx/int/download_bg.gif) top center repeat-x;
+	border:solid 1px #72a8d4;
+	text-align:center;
+	width: 466px;
+	margin: 10px auto;
+	padding: none;
+}
+
+.downloadmessage img
+{
+	border:0px;
+	padding:0px 0px 0px 0px;
+	margin:0px 2px 0px 2px;
+}
+
+.downloadmessage p
+{
+	color: #4b4638;
+	font-size:10px;
+	padding:5px 0px;
+	margin:0px;
+}
+
+.last_updated
+{
+	background: url(http://www.lexingtonky.gov/_gfx/cmn/updated.gif) top center no-repeat;
+	width: 90%;	
+    color:#aba28f;
+    font-size:9px;
+	margin: 20px auto 0px auto;
+    text-align:right;
+}
+
+.paging
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.mainSpan_wrapper_home .footer_wrapper
+{
+	position: relative;
+	width: 100%;
+	height: 114px;
+	padding: 0;
+	margin: 0px 0px 0px 0px;
+	z-index: 1;
+	background: url(_gfx/cmn/footer_bg.jpg) center 0 no-repeat;
+}
+
+.mainSpan_wrapper .footer_wrapper, .mainSpan_wrapper_noleftnav .footer_wrapper, .mainSpan_wrapper_review  .footer_wrapper
+{
+	position: relative;
+	width: 100%;
+	height: 114px;
+	padding: 0;
+	margin: 0px 0px 0px 0px;
+	z-index: 1;
+	background: url(_gfx/cmn/footer_bg.jpg) center 0 no-repeat;
+}
+
+.mainSpan_wrapper_home .footer
+{
+	width: 962px;
+	height: 50px;
+	padding: 0 0 0 0;
+	margin: 0 auto;
+	color: #fff;
+	text-align: left;
+	font-family: Arial, Trebuchet MS, Tahoma, sans-serif;
+	font-size: 12px;
+	background: none;
+}
+
+.mainSpan_wrapper .footer, .mainSpan_wrapper_noleftnav .footer, .mainSpan_wrapper_review  .footer
+{
+	width: 962px;
+	height: 50px;
+	padding: 0 0 0 0;
+	margin: 0 auto;
+	color: #fff;
+	text-align: left;
+	font-family: Arial, Trebuchet MS, Tahoma, sans-serif;
+	font-size: 12px;
+	background: none;
+}
+/*
+.mainSpan_wrapper_home .footer a, .mainSpan_wrapper .footer a, .mainSpan_wrapper_noleftnav .footer a, .mainSpan_wrapper_review .footer a
+{
+	color: #fffc00;
+	font-family: Arial, Trebuchet MS, Tahoma, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.mainSpan_wrapper_home .footer a:hover, .mainSpan_wrapper .footer a:hover, .mainSpan_wrapper_noleftnav .footer a:hover, .mainSpan_wrapper_review .footer a:hover
+{
+	color: #fffc00;
+	text-decoration: none;
+}
+*/
+.mainSpan_wrapper_home .footer p
+{
+	font-family: Arial, Trebuchet MS, Tahoma;
+	font-size:12px;
+	line-height: 20px;
+	color: #fff;
+	margin: 35px 0 0 15px;
+	text-align: left;
+}
+
+.mainSpan_wrapper .footer p, .mainSpan_wrapper_noleftnav .footer p, .mainSpan_wrapper_review .footer p
+{
+	font-family: Arial, Trebuchet MS, Tahoma;
+	font-size:12px;
+	line-height: 20px;
+	color: #fff;
+	margin: 30px 0 0 15px;
+	text-align: left;
+}
+
+.footer_nav
+{
+	float: left;
+	margin: 25px 0px 5px 151px;
+	padding: 0px;
+	font-family: Arial, Georgia;
+	font-size: 12px;
+	color: #d6dbde;	
+}
+.footer_nav a
+{
+	color: #d6dbde;
+	margin: 0px 9px 0px 0px;
+	text-decoration: none;
+}
+.footer_nav a:hover
+{
+	color: #d6dbde;
+	text-decoration: underline;
+}
+.footer_text
+{
+	float: left;
+	margin: 15px 0px 0px 150px;
+	padding: 0px;
+	font-family: Arial, Trebuchet MS;
+	font-size: 12px;
+	color: #0e4270;
+	
+}
+.footer_text a
+{
+	color: #0e4270;
+	text-decoration: none;
+}
+.footer_text a:hover
+{
+	color: #0e4270;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/**********************************
+	NoLeftNav classes
+***********************************/
+.mainSpan_wrapper_noleftnav .container
+{
+	float: left;
+	width: 962px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/cont_header_bg.gif) 0 0 repeat-x;
+	
+}
+
+.mainSpan_wrapper_noleftnav .contentheader
+{
+	width: 100%;
+}
+
+.mainSpan_wrapper_noleftnav .breadcrumb_wrapper 
+{ 
+    padding: 0px 3px 0px 0px;
+	margin: 5px 0px 0px 40px;
+	font-size: 9px;
+	background: none;
+	color: #6c6c6c;
+	float: left;
+	width: 90%;
+	font-family: Verdana, trebuchet ms, verdana;
+} 
+
+.mainSpan_wrapper_noleftnav .title
+{
+	width:100%;
+	margin: 0px 0px 20px 0px;
+	float: left;
+	background: url(http://www.lexingtonky.gov/_gfx/int/title_noleft_bg.gif) 0 bottom no-repeat;
+}
+
+.mainSpan_wrapper_noleftnav .title_left
+{
+	float: left;
+	width: 92%;
+	padding-left: 0px;
+	margin: 0px 0px 0px 40px;
+}
+
+.mainSpan_wrapper_noleftnav .title_right
+{
+	float: right;
+	width: 25%;
+	padding: 0px 25px 0px 0px;
+	margin-top: 10px;
+	
+}
+
+.mainSpan_wrapper_noleftnav .content
+{
+	width: 880px;
+	padding: 0px 40px 20px 40px;
+	background: none;
+
+}
+
+
+
+
+
+/****************************************************
+	REVIEW CLASSES
+****************************************************/
+
+
+.mainSpan_wrapper_review .container
+{
+	float: left;
+	width: 962px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/cont_bg_noleft.jpg) 0 0 no-repeat;
+	
+}
+
+.mainSpan_wrapper_review .breadcrumb_wrapper
+{
+	padding: 0px 3px 0px 0px;
+	margin: 5px 0px 0px 0px;
+	font-size: 9px;
+	background: none;
+	color: #6c6c6c;
+	float: left;
+	width: 95%;
+	font-family: Verdana, trebuchet ms, verdana;
+}
+
+.mainSpan_wrapper_review .title
+{
+	width:100%;
+	margin: 0px 0px 30px 0px;
+	float: left;
+}
+
+.mainSpan_wrapper_review .title_left
+{
+	float: left;
+	width: 90%;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+
+.mainSpan_wrapper_review .title_right
+{
+	float: right;
+	width: 40%;
+	padding: 0px 10px 0px 0px;
+	margin-top: 0px;
+	
+}
+
+.mainSpan_wrapper_review .content
+{
+	/*
+	UG: Content should not have a fixed width and horizontal padding applied to it
+	also, review container should be wide enough so that it allows to dsplay inline
+	the current content item under revision and the lock document control 
+	(displayed while reviewing a document).
+	*/
+	/*width: 583px;*/
+	padding: 0px 0px 80px 25px;
+	background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Classes inside .container_noleftnav_notitle */
+/*.mainSpan_wrapper_noleftnav .fix_intheight{ display: none;}*/
+
+.mainSpan_wrapper_noleftnav .contentheader
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+
+/******************************************
+		Review Page & Error Page classes
+******************************************/
+/* Used for content review pages, also error page */
+
+
+
+	
+/*.mainSpan_wrapper_review .fix_intheight{ display: none;}*/
+
+.mainSpan_wrapper_review .contentheader
+{
+	display:none;
+}
+
+.mainSpan_wrapper_review .content{ padding: 0;}
+
+.mainSpan_wrapper_review .component_title_review
+{
+	margin: 0px;	
+	background: url(http://www.lexingtonky.gov/_gfx/int/contentheader_noleftbg.gif) top left no-repeat;
+	width: 962px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+    padding: 50px 0px 3px 0px;
+	margin: 0px 0px 0px 20px;
+	color: #1F5017;
+	line-height: 24px;
+}
+
+.mainSpan_wrapper_review .component_title_review h1
+{
+    padding:0px 15px 5px 0px;
+    margin: 10px 0px 0px 0px;
+	float: left;
+	width: 100%;
+	font-family: Times, sans-serif;
+	font-size:30px;
+	font-weight:normal;
+	color: #49494a;
+	line-height: 32px;
+}
+
+
+.mainSpan_wrapper_review .component_listitem{ margin-left: 20px;}
+
+.mainSpan_wrapper_review .content > div{ padding-left: 15px;}
+
+
+.mainSpan_wrapper_review .component_content
+{
+	width: 700px;
+    padding: 0px 0px;
+	margin: 0 20px 200px;
+    background-color:none;
+}
+
+/* Hide review title for all except .container_review */
+.mainSpan_wrapper .component_title_review,
+.mainSpan_wrapper_noleftnav .component_title_review
+{
+	display:none;
+}
+
+
+
+
+
+.home_left
+{
+	float: left;
+	width: 200px;
+	margin: 30px 20px 0px 20px;
+	background: url(_gfx/home/focus_hdr.jpg) 0 0 no-repeat;
+}
+
+.home_middle
+{
+	float: left;
+	width: 500px;
+	height: 345px;
+	margin: 30px 0px 0px 0px;
+	background: url(_gfx/home/home_mid_bg.jpg) 0 0 no-repeat;
+}
+
+.home_right
+{
+	float: right;
+	width: 205px;
+	margin: 0px 2px 0px 0px;
+}
+
+
+
+
+
+
+
+
+/************************************
+          home buttons
+************************************/
+
+.home_buttons{
+	width: 205px;
+	margin: 15px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	float: right;
+	display: block;
+	list-style: none;
+	background: none;
+}
+
+.home_buttons ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	width: 205px;
+	height: 44px;
+}
+
+.home_buttons li{
+	float: left;
+	display: block;
+	margin: -4px 0px 0px 0px;
+	padding: 0px;
+	width: 205px;
+	height: 44px;
+}
+
+.home_buttons li a img
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+	border: 0px solid;
+	width: 205px;
+	height: 44px;
+}
+
+
+
+
+/************************************************
+Department Home Page
+************************************************/
+/* Don't add padding, left/right margins, or borders to these containers */
+.depthome_left
+{
+    padding:0px;
+	margin: 0px;
+	float: left;
+	width: 470px;
+	height: auto;
+}
+
+.depthome_right
+{
+    padding:0px;
+	float: left;
+	width: 160px;
+}
+
+.alphabetpicker a
+{
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-size:11px;
+}
+
+/************************************************
+Left navigation 
+************************************************/
+.leftnav_container
+{
+	float: left;
+	padding: 0px 0px 200px 0px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/leftnav_cont_bg.gif) 0 0 no-repeat;
+}
+
+.leftnav
+{
+	width: 228px;
+	float:left;
+	margin: 0px 0px 100px 31px;
+	padding: 0px 0 0px 0;
+	font-size:13px;
+	font-family: Arial, Trebuchet MS, Helvetica, Sans-Serif;
+	background: url(http://www.lexingtonky.gov/_gfx/nav/leftnav_top.gif) 0 0 no-repeat;
+}
+
+.leftnav a
+{
+	display:block;
+	padding: 4px 3px 4px 7px;
+	line-height: 22px;
+	color: #555a5d !important;
+	text-decoration:none;
+}
+
+.leftnav a:hover,
+.leftnav_node_wrapper_root .leftnav_node_haschildren a:hover
+{
+	color: #fff;
+	background: #2861cb url(_gfx/int/leftnav_over.gif) 0 0 repeat-x;
+	text-decoration:none;
+}
+
+
+
+.leftnav a span
+{
+	color: #555a5d;
+}
+
+.leftnav a:hover span
+{
+	color: #fff;
+}
+
+.leftnav_node_wrapper_root .leftnav_node a span
+{
+	color: #555a5d;
+}
+.leftnav_node_wrapper_root .leftnav_node a:hover span
+{
+	color: #fff;
+}
+
+.leftnav_node_wrapper_root .leftnav_node_iscurrent a span
+{
+	color: #555a5d;
+}
+.leftnav_node_wrapper_root .leftnav_node_iscurrent a:hover span
+{
+	color: #fff;
+}
+
+
+
+
+.leftnav_node_wrapper
+{
+	border-bottom:1px dotted #b1b4b5;
+	background: #d9dddf;
+}
+
+
+.leftnav a span{
+	padding-left: 9px;
+	background: url(_gfx/nav/arrow_right.gif) no-repeat 0px 3px;
+}
+
+
+
+.leftnav_node_wrapper .leftnav_node a
+{
+	color: #555a5d;
+	background: #d9dddf;
+}
+.leftnav_node_wrapper .leftnav_node a:hover
+{
+	color: #fff;
+	background: #2861cb url(_gfx/int/leftnav_over.gif) 0 0 repeat-x;
+}
+
+.leftnav_node_wrapper a span
+{
+	/*background: url(_gfx/nav/arrow_right_child.gif) no-repeat 0px 4px;*/
+	display: block;
+}
+
+.leftnav_node_wrapper_root
+{
+	border-bottom: 1px solid #dee1e4;
+}
+
+.leftnav_node_haschildren, .leftnav_node_wrapper .leftnav_node_haschildren
+{
+	background: #E5C77F;
+}
+
+.leftnav_node_wrapper_root .leftnav_node_haschildren
+{
+	background-color: #999a9a;
+}
+
+
+.leftnav_node_haschildren a span
+{
+	border-bottom: none !important;
+	color: #fff;
+	padding-left: 11px;
+	background: url(_gfx/nav/arrow_down.gif) no-repeat 0px 10px;
+	font-weight:normal;
+}
+
+.leftnav_node_iscurrent a span
+{
+	color: #555a5d;
+	padding-left: 9px;
+	background: url(_gfx/nav/arrow_right_current.gif) no-repeat 0px 8px;
+	font-weight:normal;
+	text-transform: uppercase;
+}
+.leftnav_node_iscurrent a:hover span
+{
+	color: #fff;
+	background: none;
+	font-weight:normal;	
+}
+
+.leftnav_node_wrapper .leftnav_node a span, .leftnav_node_wrapper_root .leftnav_node a span {
+	background: none;
+}
+.leftnav_node a:hover, .leftnav_node_wrapper .leftnav_node a:hover, .leftnav_node_wrapper_root .leftnav_node_haschildren a:hover
+{
+	color: #fff;
+	background: #2861cb url(_gfx/int/leftnav_over.gif) 0 0 repeat-x;
+}
+
+.leftnav_node_wrapper_root .leftnav_node_haschildren a:hover span {
+	color: #fff;
+	background: none;
+}
+
+.leftnav_node_haschildren, .leftnav_node_wrapper .leftnav_node_haschildren
+{
+	background: #d9dddf;
+}
+
+.leftnav_node_haschildren a span, .leftnav_node_wrapper .leftnav_node_haschildren a span
+{
+	color: #555a5d;
+}
+
+.leftnav_node_wrapper .leftnav_node_haschildren a span
+{
+	border-bottom: none !important;
+	color: #555a5d;
+	padding-left: 11px;
+	background: url(_gfx/nav/arrow_down_a.gif) no-repeat 0px 10px;
+	font-weight:normal;
+}
+
+.leftnav_node_wrapper_root .leftnav_node a span
+{
+	/*background: url(_gfx/nav/arrow_right.gif) no-repeat 0px 6px;*/ /*Level 1 arrows*/
+}
+
+.leftnav_node_haschildren a:hover span {
+	color: #fff;
+	background: none;
+}
+
+.leftnav span{
+	display: block;
+}
+
+
+/************************************************
+Dropdown Menu
+************************************************/
+/* Menu wrapper */ 
+/*
+.dropdownmenu
+{ 
+	position: relative;
+	width: 758px;
+	padding: 0;
+	margin-left: 18px;
+	z-index: 5000;
+}
+
+
+.dropdownmenu a
+{
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+*/
+
+#noscript_dropdown
+{
+	overflow: hidden;
+}
+
+
+/* Root menu table */
+table.menu
+{
+	border-collapse: separate;
+}
+
+/* That pops up */
+table.menu_group
+{	
+    border:1px solid #0362aa;
+    margin-left: 8px;
+}
+
+
+
+.menu_group td
+{
+	font-family: Tahoma, Arial, san-serif;
+	font-size: 10px;
+	line-height: 14px !important;
+	color:#fff;
+	cursor: pointer;
+}
+
+.menu_group img
+{
+    margin-right:3px;
+}
+
+/* Default menu style item */
+.menuitem,
+.menuitem_top 
+{
+	background: #224d83 url(http://www.lexingtonky.gov/_gfx/nav/dropdown_bg.gif) top center no-repeat;
+	border-top: solid 1px #d5e9f4;
+	border-bottom: solid 1px #022043;
+}
+
+.menuitem img,
+.menuitem_top img,
+.menuitem_hover img,
+.menuitem_active img,
+.menuitem_expanded img,
+.menuitem_hover_top img,
+.menuitem_active_top img,
+.menuitem_expanded_top img
+{
+	margin: 0;
+	margin-right: 5px;
+}
+
+.menuitem_hover,
+.menuitem_active,
+.menuitem_expanded,
+.menuitem_hover_top,
+.menuitem_active_top,
+.menuitem_expanded_top
+{
+	background: #937c0d url(http://www.lexingtonky.gov/_gfx/nav/dropdown_bg_over.gif) top center no-repeat;
+	border-top:1px solid #d5e9f4;	
+	border-bottom:1px solid #022043;
+}
+
+.menuitem_root_image
+{
+	cursor: pointer;
+}
+
+
+/************************************************
+Forms
+************************************************/
+
+.form
+{
+	height:auto;
+}
+
+.form_in_tab
+{
+	padding:15px 0 10px 10px;
+}
+
+.form div
+{
+	width:auto;
+	margin-top:8px;
+	margin-bottom:8px;
+	clear: both;
+}
+
+.form textarea
+{
+	width:200px;
+	height:150px;
+}
+
+.form_label
+{
+	padding-top:3px;
+	font-weight: bold;
+	height:20px;
+	float: left;
+	width: 150px;
+	font-size: 13px;
+	text-align: left;
+	vertical-align:middle;
+}
+
+
+
+.form_field
+{
+	height:20px;
+	float: right;
+	width: 550px;
+	text-align: left;
+	vertical-align:middle;
+}
+
+legend
+{
+	font-weight: bold;
+	color:#625C4D;
+}
+
+fieldset
+{
+	border:solid 1px #c2bca6;
+}
+
+.form_normaltextbox
+{
+	width:300px;	
+	border: 1px solid #c2bca6;
+	background-color: #fdfaed;
+	height:19px;
+	padding:2px 3px;
+}
+
+.form_normaldropdown
+{
+	width:300px;	
+	border: 1px solid #c2bca6;
+	background-color: #fdfaed;
+	height:17px;
+	padding-left:3px;	
+}
+
+.form_button
+{
+	background: #7aafd9 url(http://www.lexingtonky.gov/_gfx/int/form_button.gif) top repeat-x;
+	font-family:Tahoma, :0;
+	font-size: 11px;
+	font-weight:bold;
+	padding: 2px;
+	color: #fafafa;
+	border: 1px solid #193cbe;
+}
+
+.form_message, 
+.form_message td
+{
+	color: #cc0000;
+}
+
+.form_calendarbutton
+{
+	vertical-align: top;
+	border:0;
+	cursor: pointer;
+}
+
+.backbutton
+{
+	padding-left: 15px;
+	font-weight: bold;
+	background-image: url(http://www.lexingtonky.gov/_gfx/back_arrow.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+
+.backbutton a
+{
+}
+
+.radeditor div
+{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+
+/************************************************
+Site map
+************************************************/
+.sitemap
+{
+	width: 650px;
+	border:solid 0 #000;
+	padding-left:15px;
+}
+
+.sitemap img{
+	padding: 0 5px 0 0;
+	margin: 0;
+}
+
+.rootnode,
+.parentnode,
+.leafnode
+{
+	padding:0px;
+}
+
+.rootnode
+{
+	font-weight: bold;
+	color: #625C4D;
+} 
+
+.rootnode a,
+.parentnode a
+{ 
+	color: #625C4D;
+	font-weight: bold;
+} 
+
+.sitemap_file
+{
+	list-style-image: url(_gfx/_SiteMap/file.gif);	
+}
+
+.backtotoplink
+{
+	padding:10px 0 10px 5px;
+	font-size: 10px;
+}
+
+
+
+
+/************************************************
+Search
+************************************************/
+.search
+{
+	width: 910px;
+	margin: 0px 0px 80px 25px;
+	border-bottom:1px solid #b2d2e9;
+}
+
+.search .paging
+{ 
+	text-align:center; 
+	font-weight:bold;
+	padding-bottom:10px; 
+	padding-top:10px;
+}
+
+.search .paging span.linkpage
+{
+	margin: 2px;
+}
+	
+.search .paging a
+{ 
+	display:inline;
+	padding:3px; 
+	font-weight:normal; 
+	border:1px solid #b2d2e9;
+	border-top:0px;
+	background-color:#f4f9fd;
+	text-decoration:none;
+	background-image:url(http://www.lexingtonky.gov/_gfx/cmn/search_link_bg.gif);
+	background-repeat: repeat-x;
+	_background-position:0 1px; /* for IE only */
+	font-size:10px; 
+	font-weight:bold;
+}
+	
+.search .paging a:hover
+{
+	background:#ffffff;
+	border-top:1px solid #b2d2e9;
+}
+
+
+.search_title
+{	
+	display:none;
+}
+
+.search_result,
+.search_result_alternate
+{
+	padding: 10px 0 0 10px;
+	border-top:1px solid #70a6d2;
+	border-bottom:0;
+}
+
+.search_result_alternate
+{
+	background-color:#eaf6fc;
+}
+
+.search_result_title a
+{
+	font-weight:bold;
+	font-size:13px;
+        font-family: Arial, Trebuchet MS, Verdana;
+        color: #2d343c;
+}
+
+.search_result_location
+{}
+
+.search_result_location_field
+{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:10px;
+}
+
+.search_result_synopsis
+{
+	padding:0px 10px 0px 0px;
+	/*display:none;*/
+        font-family: Arial, Trebuchet MS, Verdana;
+		font-size: 13px;
+		color: #493124;
+}
+
+.search_result_synopsis span.term1,
+.search_result_synopsis span.term2,
+.search_result_synopsis span.term3
+{
+	color: #493124;
+	font-weight: bold;
+}
+
+.search_result_synopsis span.term1
+{
+	background-color: #FFFF66;
+}
+
+.search_result_synopsis span.term2
+{
+	background-color: #A0FFFF;
+}
+
+.search_result_synopsis span.term3
+{
+	background-color: #99FF99;
+}
+
+
+.search_result_synopsis_highlight
+{
+	background-color:#fcffcc;
+	/*display:none;*/
+}
+
+.search_result_info
+{
+	padding-left:10px;
+	padding-bottom:10px;
+}
+
+.search_result_info_field
+{}
+
+.advanced_search
+{
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.advanced_search label
+{
+	font-weight:bold;
+}
+
+.advanced_search_textbox
+{	
+    width:120px;
+}
+
+.autosuggestion div
+{
+	padding: 0 0 20px 12px;
+}
+
+
+.autosuggestion div span.best_alternative
+{
+	color: #ff3333;
+}
+
+.autosuggestion a.advanced_search_link
+{
+	position: absolute;
+	margin: -10px  0 0 630px;
+	font-size: 10px;	
+}
+
+
+
+/**************************
+Advanced search styles
+***************************/
+.search_summary
+{
+	font-weight:bold;
+	font-size:13px;
+	font-family: arial;
+	padding:0px 10px 6px 10px;
+}
+
+.search_features
+{
+	padding: 10px 15px 10px 15px;
+	background-color: #eaf6fc;
+	border-top: solid 1px #70a6d2;
+	border-bottom: solid 1px #70a6d2;
+}
+.advanced_searchbox
+{
+	float: left;
+	width: 40%;
+}
+
+.advanced_searchbox p
+{
+	margin: 0 0 5px 0;
+}
+
+.advanced_searchbox input.textfield
+{
+	width: 220px;
+	border: solid 1px #BDD0D7;
+	line-height:13px;
+}
+
+.adsearch_button
+{
+	position: absolute;
+	margin: -23px 0px 0px 293px;
+	_margin: -30px 0px 0px 293px;
+}
+
+.sort_container
+{
+	float: left;
+}
+
+div.sort_items
+{
+	border-top: dashed 1px #C1CCD2;
+	border-bottom: dashed 1px #C1CCD2;
+	padding: 4px 0;
+	margin: 8px 0px 14px 0px;
+	font-weight: normal;
+}
+
+div.sort_items span.item
+{
+	margin: 0px 6px;
+	padding: 0 0 0 18px;
+	background-image: url(http://www.lexingtonky.gov/_gfx/cmn/searchbullet.gif);
+	background-repeat: no-repeat;
+}
+
+div.sort_items span.item a
+{
+	display: inline-block;
+	height: 15px;
+	font-weight: bold;
+	color: #6C655D;
+}
+
+
+
+.sort_container,
+.sort_container_inline
+{
+	font-weight: bold;
+	overflow: hidden;
+	font-family: arial;
+	font-size: 13px;
+}
+
+.sort_container_inline div.sort_title
+{
+	float: left;
+	clear: left;
+	width: 145px;
+	margin-top: -1px;
+}
+
+.sort_container_inline div.sort_items
+{
+	float: left;
+	margin: 1px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: none;
+}
+
+.sort_container br.clear
+{
+	display:none;
+}
+
+.sort_container_inline br.clear
+{
+	clear: both;
+}
+
+.search_features a.advanced_search_link
+{
+	position: absolute;
+	margin: -30px  0 0 630px;
+	font-size: 13px;
+	font-family: arial;
+        color:#2d343c;
+}
+
+
+
+/************************************************
+Google Search
+************************************************/
+.gs-result, .gs-webResult
+{
+	border-bottom:1px solid #b2d2e9;
+}
+
+.gs-title
+{	
+	font-weight:bold;
+	font-size:12px;
+	margin-top:10px;
+}
+
+.gs-snippet
+{
+	padding: 10px 0 0 10px;
+	border-top:1px solid #b2d2e9;
+	border-bottom:0;
+}
+
+.gs-visibleUrl-long { display:block; }
+.gs-visibleUrl-short { display:none; }
+table.gsc-branding { display:none; }
+td.gsc-branding-text { display:none; }
+div.gsc-branding-text { display:none; }
+td.gsc-branding-img { display:none; }
+a.gsc-branding-clickable { display:none; }
+.gsc-keeper{ display:none; }
+.gsc-result div.gs-watermark { display: none; }
+.gsc-resultsHeader { display: none; }
+
+/*****************************************
+Calendar month view
+*****************************************/
+.calendar_filter
+{
+    margin:5px 0px 20px 0px;
+    text-align:center;
+}
+
+.calendar_filter select
+{
+	font-family: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size:11px;
+    width:180px;
+}
+
+.calendar_wrapper
+{
+	text-align:center;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 140px 0px;
+	width: 880px;
+}
+
+.calendar
+{
+	width:100%;
+	/*border: 1px solid #d1c9b0;*/
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+.calendar_dayheader
+{
+	height: 1px;
+	color: #fff;
+	background: #264c97 url(_gfx/int/calendar_hdr.gif) 0 0 repeat-x;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Trebuchet MS, Verdana;
+	padding: 4px;
+	border: 1px solid #c7cace;
+	text-transform: uppercase;
+}
+
+.calendar_selector
+{
+	color:#ffffff;
+	background-color:none;
+	font-size:9px;
+	font-weight:bold;		
+}
+
+.calendar_title td
+{
+	padding: 10px 0px 12px 0px;
+	background: none;
+	font-family: Arial,Helvetica,san-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #7c7f81;
+	width:60%;
+}
+
+td.calendar_nextprev
+{
+	width:200px !important;
+	text-align: center;
+}
+
+.calendar_nextprev a
+{
+    font-family: Arial, Verdana;
+	font-size:12px;
+	color:#1a3cc4 !important;
+	font-weight: normal;
+}
+
+.calendar_day,
+.calendar_today,
+.calendar_weekendday,
+.calendar_selectedday,
+.calendar_othermonthday 
+{
+	text-align:left;
+	vertical-align: top;
+	font-family: Arial, Helvetica, san-serif;
+	font-size:18px;
+	line-height:25px;
+	font-weight:bold;
+	padding: 3px 3px 3px 3px;	
+	width: 95px;
+	height:100px;
+	border: 1px solid #c7cace;
+}
+
+.calendar_day a,
+.calendar_today a,
+.calendar_weekendday a,
+.calendar_selectedday a,
+.calendar_othermonthday  a
+{
+	color: #1a3cc4;
+	padding: 0 5px 8px 5px;
+	margin:0px 0;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.calendar_day,
+.calendar_weekendday
+{
+	background: #edf8fd;
+	color:#707376;
+}
+
+.calendar_othermonthday
+{
+	background:#e1f4fe;
+	color:#9fb0b8;
+}
+
+.calendar_today
+{
+    background: #7ebae3;
+	color:#1a3cc4;
+}
+
+.calendar_selectedday
+{
+	background-color:#f2C532;
+	color:#493421;
+}
+
+.calendar_eventtime
+{
+	color:#666666;
+	font-size:12px;		
+	font-weight: normal;	
+	line-height:11px;
+	margin:0px 0 0 5px;
+	padding: 0px 0 0 0 !important;
+}
+
+.calendar_today .calendar_eventtime
+{
+	color:#fff;
+}
+
+.calendar_eventlink
+{
+	font-size:10px;		
+	font-weight: normal;
+	line-height:11px;
+	display:block;
+	padding:0px 0 0px 0;
+	margin:0px 0 ;
+}
+
+.calendar_allinone .listtable
+{
+	width:720px;
+}
+.calendar_day br,
+.calendar_today br,
+.calendar_weekendday br,
+.calendar_selectedday br,
+.calendar_othermonthday  br
+{
+	display: none;
+}
+
+/*************************************************
+Component detail 
+*************************************************/
+.component_title
+{
+    padding:5px 0px 0px 0px;
+    margin: 0px 0px 2px 0px;
+    width:95%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	font-weight: bold;
+	color: #493124;
+}
+
+.component_subtitle
+{
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 2px 0px;
+    width:95%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:18px;
+	font-weight: normal;
+	color: #493124;
+}
+
+.component_back
+{
+	margin:0px 0px 10px 0px;
+}
+
+.component_listitem
+{
+	padding: 0 0 15px;
+	width:400px;
+}
+
+.component_listitem a
+{
+	color: #1a3cc4;
+}
+.component_listitem a:hover
+{
+	color: #1a3cc4;
+	text-decoration: none;
+}
+
+.component_listitem div
+{
+	margin-left: 0px;
+	padding: 0 0 4px;
+	width:400px;
+}
+
+.component_listitem_header
+{
+	font-weight: bold;
+	width:100px;
+	vertical-align: top;
+}
+
+.component_listitem_content
+{
+	width:300px;
+	vertical-align: top;
+}
+
+.component_content
+{
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #707376;
+	line-height: 18px;
+}
+
+.component_content p
+{
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #707376;
+	line-height: 18px;
+}
+
+/************************************************
+Link List
+************************************************/
+.link_name a
+{
+    padding-left:10px;
+    background-image:url(http://www.lexingtonky.gov/_gfx/cmn/link_list_arrow.gif);
+    background-repeat:no-repeat;
+    background-position: 0 4px;
+}
+
+.link_content
+{
+	padding-left:10px;
+	display:block;
+}
+
+.link_content img
+{
+	margin-left:0px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+/************************************************
+Lists, including DataGrid classes
+************************************************/
+/* For links on top of page */
+.topselector
+{
+	margin: 10px 0;
+}
+
+/* For dropdown filters */
+
+.filter
+{
+	margin: 10px 0px 10px 0px;
+}
+
+.mainSpan_wrapper .filter
+{
+	margin: 10px 0px 10px 0px;
+}
+
+.filter a{
+	font-size: 13px;
+	color: #1a3cc4;
+}
+
+.filter a:hover{
+	color: #1a3cc4;
+	text-decoration: none;
+}
+
+.filter select
+{
+	font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+	font-size:13px;
+	width:180px;
+}
+
+.timing
+{
+}
+
+.listtable
+{
+	width:640px;
+	border:1px solid #979fa2 !important;
+	background-color:#edf8fd;
+	border-collapse:separate;
+	margin: 10px 0;
+}
+.mainSpan_wrapper_noleftnav .listtable
+{
+	width:660px;
+	border:1px solid #979fa2 !important;
+	background-color:#edf8fd;
+	border-collapse:separate;
+	margin: 10px 0px 0px 35px;
+}
+
+.listtable img
+{
+	margin:0;
+}
+
+.listtable th
+{
+	padding: 4px;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:left;
+	color: #fff;
+	background: #214391 url(_gfx/int/table_hdr.gif) 0 0 repeat-x;
+	text-transform:uppercase;
+	border:0px;
+}
+
+.listtable_header a
+{
+	font-family: Verdana;
+	font-size: 12px;
+	color:#ffffff;
+}
+
+.listtable td
+{
+	border:0;
+	border-top:1px dotted #979fa2;
+	padding:4px;
+	margin:0;
+	color: #6A655C;
+	font-size: 13px;
+	font-family: arial;
+}
+
+.listtable tr:hover
+{
+	background-color:#fff;
+}
+
+.listtable_buttoncolumn
+{
+	width: 70px;
+	font-size: 9px;
+}
+
+.listtable_buttoncolumn input
+{
+	background-image: url(http://www.lexingtonky.gov/_gfx/button_bg.gif);
+	font-size: 10px;
+	padding: 2px;
+	color: #000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d4d4d4 #949494 #828282 #c2c2c2;
+}
+
+.listtable_checkboxcolumn
+{
+	padding:0px;
+	width:1px;
+}
+
+.listtable_checkboxcolumn input
+{
+	margin-left:-2px;
+	margin-top:-3px;
+}
+
+.listtable_row_on
+{
+	background-color:#e4f1ff;
+}
+
+.listtable_row_off
+{
+	background-color:#ffffff;
+}
+
+/************************************************
+Plain lists
+************************************************/
+.listcomponent
+{
+	width: 620px;
+	border:solid 0px #ffffff;
+}
+
+.listcomponent th
+{
+	display:none;
+}
+
+.listcomponent td
+{
+	border:0px;
+	padding:4px 4px 10px 0;
+	margin:0px;
+	font-family: arial;
+	font-size: 13px;
+}
+
+.listcomponent img {margin: 0;}
+
+
+/************************************************
+Image-using item list 
+************************************************/
+.righttable
+{
+    width:200px;
+	border:1px solid #1f5017;
+	border-collapse: separate;
+
+}
+
+.righttable th
+{
+	background-color: #1f5017;
+	padding:3px;
+	border:0;
+	text-transform:uppercase;
+	font-weight: bold;
+	text-align:left;
+	color: #ffffff;
+	height:20px;
+	font-size:9px;
+	
+}
+
+.righttable_header a
+{
+	color:#ffffff;
+}
+
+.righttable td
+{
+    border:0;	
+	border-top:1px solid #dadada;
+	padding:3px;
+	margin:0;
+	font-size:10px;
+}
+
+.righttable tr:hover
+{
+	background-color:#fffcee;
+}
+
+.righttable_buttoncolumn
+{
+	width: 30px;
+	font-size: 9px;
+}
+
+.righttable_buttoncolumn input
+{
+	background-image: url(http://www.lexingtonky.gov/_gfx/button_bg.gif);
+	font-size: 10px;
+	padding: 4px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #D4D4D4 #949494 #828282 #C2C2C2;
+}
+
+.righttable_checkboxcolumn
+{
+	padding:0;
+	width:1px;
+}
+
+.righttable_checkboxcolumn input
+{
+	margin-left:-2px;
+	margin-top:-3px;
+}
+
+.righttable_row_on
+{
+	background-color:#e4f1ff;
+}
+
+.righttable_row_off
+{
+	background-color:#ffffff;
+}
+
+/************************************************
+FAQ List
+************************************************/
+.listfaq
+{
+	width:650px;
+	padding:0;
+	border-collapse: separate;
+	background-color:none;
+	border:0px solid #193cbe;
+	
+}
+
+.listfaq td
+{
+	padding:4px;
+	border:none;
+	font-size: 13px;
+	font-family: arial;
+}
+
+.listfaq_answers
+{
+	width:640px;
+	padding:0;
+	border-collapse: separate;
+}
+
+.listfaq_answers td
+{
+	padding:4px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.listfaq_q
+{
+	font-weight:bold;
+}
+
+.listfaq_a p, .listfaq_a ul
+{
+	margin-top:0px;
+}
+
+.listfaq_a_left
+{
+	float:left;
+	width:20px;
+	font-weight:bold;
+}
+
+.listfaq_a_right
+{
+	float:left;
+	width:600px;
+	margin:0px 0px 0px 0px;
+}
+
+/* Component list pagers*/
+.listtable_pager,
+.listcomponent_pager,
+.listfaq_pager
+{
+	text-align:right;
+	font-size:13px;
+	font-weight:bold;
+	padding-bottom:10px; 
+	padding-top:10px;
+	border-top:1px solid #bcb599;
+}
+
+.listtable_pager span,
+.listcomponent_pager span,
+.listfaq_pager span
+{
+	font-size:13px;
+}
+
+.listtable_pager a,
+.listcomponent_pager a,
+.listfaq_pager a
+{
+	display:inline;
+	padding:3px; 
+	border:1px solid #bcb599;
+	background-color:#f4f9fd;
+	text-decoration:none;
+	background-image:url(http://www.lexingtonky.gov/_gfx/cmn/search_link_bg.gif);
+	background-repeat: repeat-x;
+	_background-position:0 1px; /* for IE only */
+	font-size:13px; 
+	font-weight:bold;
+}
+
+.listtable_pager a:hover,
+.listcomponent_pager a:hover,
+.listfaq_pager a:hover
+{
+	background:#ffffff;
+	border-top:1px solid #b2d2e9;
+}
+
+.listcomponent_pager
+{
+	text-align:left;
+}
+
+
+/************************************************
+Link List
+************************************************/
+
+.listlink
+{
+	width:540px;
+	padding:0;
+	border-collapse: separate;
+}
+
+.listlink td
+{
+	padding:4px;
+	border:none;
+}
+
+
+/***********************************************
+E-Notifier
+***********************************************/
+.tag_div
+{
+	padding: 10px 0 20px;
+}
+
+.area_div
+{
+	padding: 5px 0;
+}
+
+.area_div table
+{
+	font-family: arial;
+	font-size: 13px;
+}
+
+/************************************************
+Form/Survey Component
+************************************************/
+.survey_title
+{
+	font-size: 14px;
+	font-weight: bold;
+	padding: 2px 0 2px 0;
+	margin: 0px 0px 0px 20px;
+}
+
+.survey_title+script+span>table
+{
+	width:93% !important;
+	margin: 0px 0px 0px 25px;
+	padding: 0px 0px 90px 0px;
+}
+
+.form_list_title
+{
+	display:none;
+}
+
+/************************************************
+Staff Directory
+************************************************/
+.staff_column_div
+{
+	margin:10px 0px 0px 0px;
+	width:600px;
+	display:block;
+	position:relative;
+	float:left;
+}
+
+.mainSpan_wrapper_review .staff_column_div
+{
+	width: 900px;
+}
+
+.staff_thumbnail_span
+{
+	float:left;
+	width:105px;
+}
+
+.staff_thumbnail_span img
+{
+	padding:0px;
+	margin:0px 0px 10px 0px;
+	border-width:1px;
+	border-style:solid;
+}
+
+.staff_listitem_span
+{
+	float:right;
+	width:80%;
+	margin:0px 0px 10px 0px;
+}
+
+.staff_component_title
+{
+    padding:5px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    width:95%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:20px;
+	font-weight: bold;
+	color: #566b52;
+}
+
+/************************************************
+Department boxes
+************************************************/
+.box_container
+{
+	margin-left:20px;
+	border: 1px solid #00639c;
+	font-size:10px;
+	line-height:12px;
+	background: url(http://www.lexingtonky.gov/_gfx/int/deptbox_bg.gif) top center no-repeat;
+	/*float:left;*/
+}
+
+.box_title
+{
+	color:#ffffff;
+	font-size:11px;
+	font-weight:bold;
+	padding:4px;
+	background:#00639c;
+}
+
+.box_list
+{
+    padding: 5px ;
+}
+
+.box_list a
+{
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.box_list a:hover
+{
+	text-decoration:underline;
+}
+
+.box_list p
+{
+	margin: 6px 0;
+	padding:0;
+	text-align:center;
+	font-size:10px;
+}
+
+.box_item_title
+{
+	padding-top:2px;
+    padding-bottom:6px;
+    margin-bottom:0px;
+    clear:both;
+}
+
+.box_item_date
+{
+	margin-top:-4px;
+    padding-bottom:8px;
+    clear:both;
+}
+
+.box_bottomlink{
+	padding-top: 0px;
+}
+
+.box_bottomlink a,
+.box_bottomlink a:hover
+{
+    font-size:10px;
+    display:block;
+    text-align:left;
+    padding:3px;
+}
+
+.box_bottomlink a img{
+	border: none;
+}
+
+/******************************************
+Photo Album 
+******************************************/
+.album_item
+{
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.album_thumb
+{
+	background-position: top center;
+	background-image: url(_gfx/album/exported_group.jpg);
+	overflow: hidden;
+	width: 260px;
+	height:152px;
+	max-height:130px;
+	padding-top:22px;
+	background-repeat: no-repeat;
+    
+}
+
+.album_thumb img
+{
+	width: 160px;
+	height: 110px;
+	position:relative;
+	left:0px; 
+	border:0px;
+	display:block;
+	margin:0px auto;
+	overflow: hidden;
+}
+
+.album_name
+{
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.album_details
+{
+    font-size:9px;
+}
+
+.photo_item
+{
+    padding:20px;
+    text-align:center;
+    vertical-align:top;
+}
+
+.photo_thumb
+{
+    background-position: top center;
+    background-image: url(http://www.lexingtonky.gov/_gfx/album/single_photo.gif);
+    overflow: hidden;
+    width:240px;
+    height:240px;
+    background-repeat: no-repeat;
+    padding-top:50px;
+    max-height: 190px;
+    margin: 0 auto;
+}
+
+.photo_thumb img
+{
+    display:block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.photo_detail
+{
+    text-align:center;
+}
+
+.photo_name
+{
+}
+
+.slideshow_link
+{
+    float:right;
+    font-weight:bold;
+    font-size:smaller;
+    width:140px;
+	background: #082956 url(http://www.lexingtonky.gov/_gfx/int/form_button.gif) top repeat-x;
+   	border: 1px solid #031b37;
+ text-align:left;
+    margin:0px 0px 0px 10px;
+}
+
+.slideshow_link a
+{
+    display:block;
+    padding:4px 3px 4px 27px;
+	color: #fafafa;
+    background-image:url(http://www.lexingtonky.gov/_gfx/album/slideshow.gif);
+    background-repeat:no-repeat;
+    background-position:7px 7px;
+    font-size:9px;
+}
+
+.slideshow_nav
+{
+    text-align:center;
+}
+
+.rss_button
+{
+	float: right;
+	margin:-30px auto 0px auto;
+}
+
+/************************************************
+Official's Corner 
+************************************************/
+.official_list
+{
+	width:470px;
+	clear:both;
+}
+
+.official_list:after { content: ""; display: block; height: 0; clear: both; }
+
+.official_list_thumbnail
+{
+	float:left;
+	width:70px;
+}
+
+.official_list_info
+{
+	float:right;
+	padding:25px 0px 0px 00px;
+	width:400px;
+}
+
+.official_section_title
+{
+	font-size:12px;
+	font-weight:bold;
+	clear:both;
+	padding:10px 0px 3px 0px;
+}
+
+.official_top
+{
+	
+	width:560px;
+	height:auto;
+}
+
+.official_top:after { content: ""; display: block; height: 0; clear: both; }
+
+.official_image
+{
+	float: left;
+	width:auto;
+	height:auto;
+	margin:10px 0px 0px 0px;
+	border: solid 1px #000000;
+}
+
+.official_info
+{
+	float: right;
+	text-align:left;
+	width:400px;
+	height:auto;
+	margin:10px 0px 0px 0px;
+	padding:5px 5px 5px 5px;
+	border:solid 1px #CCCCCC;
+	
+}
+
+.official_info_div
+{
+	clear:both;
+	width:390px;
+	height:auto;
+}
+
+.official_info_div:after { content: ""; display: block; height: 0; clear: both; }
+
+.official_info_header
+{
+	font-weight:bold;
+	float: left;
+	width:100px;
+	height:auto;
+}
+
+.official_info_content
+{
+	float: right;
+	width:285px;
+	height:auto;
+	padding:0px 0px 0px 5px;
+}
+
+.official_info_noimage
+{
+	width:560px;
+	height:auto;
+	padding:10px 0px 0px 0px;
+}
+
+.official_message
+{
+	clear:both;
+	width:560px;
+	padding:5px 0px 0px 0px;
+}
+
+.official_message:after { content: ""; display: block; height: 0; clear: both; }
+
+.official_message_list
+{
+	float: left;
+	width:140px;
+	padding:5px 0px 0px 0px;
+}
+
+.official_message_message
+{
+	float: right;
+	width:410px;
+	height:auto;
+}
+
+.official_message_subject
+{
+	font-size:12px;
+	font-weight:bold;
+	padding:3px 3px 3px 3px;
+}
+
+.official_message_body
+{
+	height:auto;
+	width:408px;
+	padding: 3px 3px 3px 3px;
+	border:solid 1px #CCCCCC;
+}
+
+.official_bio
+{
+	width:560px;
+	clear:both;
+	padding: 3px 3px 3px 3px;
+	border:solid 1px #CCCCCC;
+}
+
+.official_bio:after { content: ""; display: block; height: 0; clear: both; }
+
+
+/************************************************
+Map
+************************************************/
+.map_size
+{
+	width:500px;
+	height:300px;
+}
+
+/************************************************
+Home Page
+************************************************/
+/* Images w/o display:block in IE add a bottom margin */ 
+/*.home_collage img
+{
+	display: block; 
+}*/
+
+.home_collage
+{
+	float: left;
+	height: 233px;
+	width: 962px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	/*z-index: 0;*/
+	color: #fff;
+	background: url(_gfx/home/collage1.jpg) 0 0 no-repeat;
+}
+
+.home_collage #imgHidden
+{
+	position: absolute;
+	z-index: 0;
+}
+
+.home_collage #imgSlide
+{
+	position: absolute;
+	z-index: 1;
+}
+
+.home_boxes
+{
+	/*position: relative;
+	top: 16px;	
+	left: 544px;
+	width: 206px;*/
+	position: absolute;
+	z-index: 2;
+	margin: 16px 0px 0px 544px;
+}
+
+.important_alert_wrapper
+{	
+	position: absolute;
+	z-index: 2;
+	margin: 15px 0px 0px 252px;
+	color: #492913;
+	padding: 0px;
+	width: 460px;
+	height: 201px;
+	overflow: hidden;
+	background: url(_gfx/home/alert_bg.gif) 0 0 no-repeat;	
+	filter:Alpha(opacity=90); 
+	-moz-opacity: .90;
+}
+
+.important_alert_wrapper .box_title,
+.important_alert_wrapper .box_bottomlink
+{
+	display: none;
+}
+
+.important_alert_wrapper .box_list
+{
+	margin-top: 30px;
+}
+
+.important_alert_wrapper .box_item_title
+{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.important_alert_wrapper .box_item_title a,
+.important_alert_wrapper .box_item_title a:hover
+{
+	font-weight: normal;
+	color: #000;
+}
+
+
+.important_alert
+{
+	padding: 0px;
+	margin: 65px 0px 0px 25px;
+	width: 400px;
+	height: 85px;
+	overflow: hidden;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: #27292a;
+	filter:Alpha(opacity=100); 
+	-moz-opacity: 1.0;
+}
+
+.spotlight
+{
+	float: left;
+	width: 200px;
+	height: 260px;
+	overflow: hidden;
+	font-family: Arial, Trebuchet MS, tahoma;
+	font-size: 12px;
+	line-height: 20px;
+	color: #6f7376;
+	background: none;
+	margin: 65px 0px 0px 0px;
+}
+
+.spotlight_text
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+.spotlight_text span
+{
+	font-family: Arial;
+	font-size: 15px;
+	color: #6f7376;
+	font-weight: bold;
+}
+
+.spotlight_text a
+{
+	color: #b06110;
+}
+.spotlight_text a:hover
+{
+	color: #b06110;
+	text-decoration: none;
+}
+
+.spotlight p, .spotlight ul li
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.spotlight_text img
+{
+	float: left;
+	border: 2px solid #fff;
+	margin: 4px;
+}
+
+.spotlight_link
+{
+	float: right;
+	margin: 10px 0px 0px 0px;
+	text-align: right;
+	font-family: Arial;
+}
+.spotlight_link a
+{
+	text-align: right;
+	color: #393b3c;
+	text-decoration: none;
+	font-weight: bold;
+}
+.spotlight_link a:hover
+{
+	text-align: right;
+	color: #393b3c;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+.click_infoBtn a
+{
+	display: block;
+	float: left;
+	margin: 20px 0px 0px 25px;
+	width: 178px;
+	height: 30px;
+	background: url(http://www.lexingtonky.gov/_gfx/home/click_infoBtn.gif) 0 0 no-repeat;
+}
+.click_infoBtn a:hover
+{
+	background: url(http://www.lexingtonky.gov/_gfx/home/click_infoBtn.gif) 0 -30px no-repeat;
+}
+
+.didyou
+{
+	padding: 0;
+	margin: 5px 10px 0 0;
+	width: 206px;
+	left: 544px;
+	height: 87px;
+	overflow: hidden;
+	background: url(http://www.lexingtonky.gov/_gfx/home/didyou.gif);
+}
+
+
+
+/*.important_alert p{ margin: 20px 10px 10px 30px;}*/
+
+.weather
+{
+	position: absolute;
+	top: 100px;
+	right: 40px;
+	text-align: right;
+}
+
+.weather
+{
+	float: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #fff;
+	font-weight: bold;
+	text-align: right;
+}
+
+.weather a
+{
+	color: #d7edff;
+	font-size: 11px;
+	text-decoration: underline;
+	margin: 0px 0px 0px 10px;
+}
+.weather a:hover
+{
+	color: #d7edff;
+	text-decoration: none;
+}
+.weather img
+{
+	float: left;
+	height: 30px;
+	margin-right: 4px;
+	margin-top: -4px;
+}
+
+
+/* Yahoo weather forecast */
+.weatherFeed {
+	font-size:11px;
+}
+
+.weatherForecast
+{
+	background: none repeat scroll 0 0 #fff;
+	float: left;
+	width:100%;
+}
+
+.weatherFeed a { }
+.weatherFeed a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.weatherItem {
+	background-position: 0 0;
+	padding: 0.8em;
+	text-align: center;
+}
+.weatherCity 
+{
+	text-transform: uppercase; 
+	font-size: 1.6em;
+	padding-top: 6px;
+	text-align: right;
+}
+.weatherTemp {
+	font-size: 2.8em;
+	font-weight: bold;
+}
+.weatherDesc, .weatherCity, .weatherForecastDay  { font-weight: bold; }
+.weatherDesc { margin-bottom: 0.4em; }
+.weatherRange, .weatherWind, .weatherLink, .weatherForecastItem { font-size: 1em; }
+.weatherLink, .weatherForecastItem {
+	margin-top: 0.5em;
+	text-align: center;
+}
+.weatherForecastItem {
+	background-position: center top;
+	background-size: 80% auto;
+	float: left;
+	padding: 52px 0 0;
+	width: 20%;
+}
+.weatherLink{ font-size:1.3em; line-height: 180%;}
+.weatherForecastDay,.weatherForecastText { font-size: 1.2em; }
+
+.odd { background-color: #e8e8fc; }
+.even { background-color: #d4d4e8; }
+
+/* END Yahoo weather forecast */
+
+
+
+
+
+
+
+.home_columns
+{
+	float: left;
+	padding: 0;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 80px 0px;
+	width: 962px;
+	background: url(_gfx/home/columns_bg.jpg) 0 bottom no-repeat;
+}
+
+
+
+
+
+
+
+/************************************************
+Home boxes
+************************************************/
+/*HOME EVENTS*/
+.home_events
+{
+	float: left;
+	margin:50px 0px 0px 20px;
+	width: 220px;
+	height: 260px;
+	overflow: hidden;
+}
+
+.home_events .box_item
+{
+	display: block;
+	float: left;
+	width: 220px;
+	height: 58px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 5px 0px;
+}
+
+.home_events .box_list
+{
+	float: left;
+	width: 220px;
+	height: 230px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: #464749;	
+    font-size:11px;
+	overflow: hidden;
+	background: url(http://www.lexingtonky.gov/_gfx/home/home_events_box_list.jpg) 0 0 no-repeat;
+}
+
+.home_events .box_title
+{
+	display: block;
+	width: 220px;
+	height: 225px;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.home_events .box_title{
+	background: url(http://www.lexingtonky.gov/_gfx/home/home_events_top.gif) 0 0 no-repeat;
+	display:block;
+	padding: 0px 0 0 0;
+	height: 50px;
+	height /**/:50px;
+	width: 220px;
+	display: none;
+}
+
+.home_events .box_item_title{
+    float: left;
+	width: 210px;
+	font-size:12px;
+	padding: 0px 18px 10px 10px;
+	margin: 0px 0px 0px 0px;
+	display: block;
+	color: #27292a;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	background: url(http://www.lexingtonky.gov/_gfx/home/bullet.gif) 0 5px no-repeat;
+}
+
+.home_events .box_item_title a{
+	color: #27292a;
+	font-weight: normal;
+	text-decoration: none;
+}
+.home_events .box_item_title a:hover{
+	color: #142fbf;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.home_events .box_item_date
+{
+	float: left;
+	width: 220px;
+	display: block;
+	padding: 0px 0px 10px 10px;
+	margin: 0px 0px 0px 0px;
+	font-family: Arial, Trebuchet MS, Helvetica, sans-serif;
+    font-size:12px;
+	font-weight: normal;
+	color: #535659;
+	border-bottom: 1px dotted #65696e;
+}
+
+
+.home_events .box_bottomlink{
+	float: left;
+	height: 20px;
+	color: #393b3c;
+	font-family: Arial;
+	margin: 10px 0px 0px 0px;
+	padding: 0px 10px 0px 0px;
+	overflow: hidden;
+	text-align: right;
+	background: url(http://www.lexingtonky.gov/_gfx/home/home_events_box_bottom.jpg) 0 0 no-repeat;
+}
+
+
+.home_events .box_bottomlink a
+{
+	display: block;
+	height: 20px;
+	float: right;
+	line-height: 20px;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	text-align: right;
+	color: #393b3c;
+	font-weight: bold;
+	font-size: 12px;
+	background: none;
+	text-decoration: none;
+}
+
+.home_events .box_bottomlink a:hover
+{
+	display: block;
+	height: 20px;
+	float: right;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: right;
+	text-decoration: underline;	
+	color: #393b3c;
+}
+
+
+
+
+
+
+
+
+/*HOME NEWS*/
+
+.home_news
+{
+	float: left;
+	width: 230px;
+	margin: 40px 0px 0px 10px;
+	height: 260px;
+	overflow: hidden;
+}
+.home_news .box_title
+{
+	display: block;
+	width: 230px;
+	height: 44px;
+	padding: 0;
+	margin: 0;
+	text-align:left;
+}
+
+.home_news .box_title{
+	background: url(http://www.lexingtonky.gov/_gfx/home/home_news_top.gif) 0 0 no-repeat;
+	display:block;
+	padding: 0px 0 0 0;
+	overflow: hidden;
+	height: 42px;
+	height /**/:42px;
+	width: 230px;
+	display: none;
+}
+
+.home_news .box_list{
+	
+	width: 230px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: #464749;	
+    font-size:11px;
+	background: url(http://www.lexingtonky.gov/_gfx/home/home_news_box_list.jpg) 0 0 no-repeat;
+	overflow: hidden;
+}
+
+.home_news img{
+	border: 1px solid #68514d;
+}
+
+.home_news .box_item_title
+{
+	font-size:12px;
+	padding: 10px 0px 10px 10px;
+	margin: 0px 6px 0px 0px;
+	display: block;
+	color: #27292a;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	background: url(http://www.lexingtonky.gov/_gfx/home/home_box_bullet.gif) 15px 12px no-repeat;
+	border-bottom: 1px dotted #65696e;
+}
+
+.home_news .box_item_title a
+{
+	color: #27292a;
+	font-weight: normal;
+	text-decoration: none;
+}
+.home_news .box_item_title a:hover
+{
+	color: #142fbf;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.home_news .box_item{
+	width: 100%;
+	margin-top: 13px;
+}
+
+.home_news .news_img{
+	float: left;
+}
+
+.home_news .box_item_desc{
+	display: block;
+	padding: 0px 0px 0px 30px;
+	margin: 0px 0px 0px 0px;
+	font-family: Arial, Trebuchet MS, Helvetica, sans-serif;
+    font-size:11px;
+	font-weight: normal;
+	color: #322f2b;
+}
+.home_news .box_item_desc a
+{
+	font-weight: normal;
+	color: #013d71;
+}
+.home_news .box_item_desc a:hover
+{
+	font-weight: normal;
+	color: #013d71;
+}
+
+
+.home_news .box_bottomlink{
+	float: left;
+	height: 20px;
+	color: #393b3c;
+	font-family: Arial;
+	margin: 10px 0px 0px 0px;
+	padding: 0px 10px 0px 0px;
+	overflow: hidden;
+	background: url(http://www.lexingtonky.gov/_gfx/home/home_events_box_bottom.jpg) 0 0 no-repeat;
+}
+
+
+.home_news .box_bottomlink a
+{
+	display: block;
+	height: 20px;
+	float: right;
+	line-height: 20px;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	text-align: right;
+	color: #393b3c;
+	font-weight: bold;
+	font-size: 12px;
+	background: none;
+	text-decoration: none;
+}
+
+.home_news .box_bottomlink a:hover
+{
+	display: block;
+	height: 20px;
+	float: right;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: right;
+	text-decoration: underline;	
+	color: #393b3c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.external_link
+{
+	display: inline-block;
+	padding: 2px 18px 2px 0;
+	background: url(_gfx/int/external_link.gif) no-repeat right bottom;
+}
+
+a.external_link
+{
+	display: inline-block;
+	padding-right:18px;
+	background-image:url(_gfx/int/external_link.gif);
+	background-position:right;
+	background-repeat:no-repeat;	
+	zoom: 1;	
+}*/
+
+/******Weather component***/
+.weather_button
+{
+	margin:5px 0px 0px 50px;
+}
+
+.weather_button img
+{
+	border:0px;
+}
+
+.forecast_item
+{
+	text-align: center;
+	float: left;
+	border: solid 2px #72a8d4;
+	height: 180px;
+	width: 87px;
+	margin: 5px 10px 5px 10px;
+	overflow: hidden;
+	line-height: 18px;
+	background-color:#fff;
+}
+
+.forecast_item img
+{
+	width: 79px;
+	height: 49px;
+}
+
+.forecast_container
+{
+	padding: 20px;
+}
+
+.weather_home_icon 
+{
+	width: 79px;
+	height: 49px;
+}
+
+.weather_home_icon img
+{
+	margin-top:7px;
+	border:0px;
+}
+
+
+
+/******Facility component***/
+.facility_header_cell{
+	font-weight:bold;
+}
+
+td.facility_detail li {
+	margin: 0px;
+	padding:0px;
+	line-height:15px;
+}
+
+td.facility_thumbnail img {float:left;margin:0px 10px 10px 0; border:1px solid #032C48;}
+td.facility_thumbnail {vertical-align:top;}
+
+.facility_detail {margin:10px;float:left;}
+.facility_detail a {font-weight:bold}
+
+
+.footerbold{
+	font-weight: bold;
+}
+
+
+/****************************************
+	NEW DEPARTMENT BOX CONTAINERS
+*****************************************/
+.depthome_right .box_container
+{
+	width: 159px;
+	font-size:10px;
+	line-height:12px;
+	border: 0px;
+}
+
+.depthome_right .newsbox_wrapper .box_title
+{
+	width: 159px;
+	background: url(_gfx/int/dept_news_hd.gif) 0 0 no-repeat;
+	display:block;
+	padding: 28px 0 0 0;
+	overflow: hidden;
+	height: 0px !important;
+	height /**/:28px;
+}
+.depthome_right .eventbox_wrapper .box_title
+{
+	width: 159px;
+	background: url(_gfx/int/dept_events_hd.gif) 0 0 no-repeat;
+	display:block;
+	padding: 28px 0 0 0;
+	overflow: hidden;
+	height: 0px !important;
+	height /**/:28px;
+}
+
+.depthome_right .box_list
+{
+	padding: 5px 0px 5px 0px;
+    	padding-left: 10px;
+		border-left: 1px solid #e5eef2;
+		border-right: 1px solid #e5eef2;
+    	background: #eaf6fc url(_gfx/int/dept_list_bg.gif) 0 0 repeat-x;
+    	font-family: Arial, Verdana;
+    	font-size: 12px;
+		color: #707376;
+}
+
+.depthome_right .box_list a
+{
+	font-weight: normal;
+	color: #707376;
+	text-decoration:none;
+}
+
+.depthome_right .box_list a:hover
+{
+	color: #142fbf;
+	font-weight: normal;
+	text-decoration:none;
+}
+
+.depthome_right .box_list p
+{
+	margin: 6px 0;
+	padding:0;
+	text-align:center;
+	font-size:10px;
+}
+
+.depthome_right .box_item_title
+{
+	padding: 2px 10px 5px 0px;
+    margin:0px 10px 5px 0px;
+    /*border-bottom: 1px dotted #666;*/
+	clear:both;
+}
+
+.depthome_right .box_item_date
+{
+    padding: 0px 0px 10px 0px;
+	font-family: Arial, Verdana;
+    font-size: 12px;
+	color: #535659;
+	font-weight: normal;
+}
+
+.depthome_right .box_bottomlink{
+	clear:both;
+	margin-top: 0px;
+	padding-top: 0px;
+	width: 159px;
+	height: 37px;
+	background: url(_gfx/int/dept_box_bottom.jpg) 0 0  no-repeat;
+}
+
+.depthome_right .box_bottomlink a
+{
+	display: block;
+	height: 20px;
+	text-decoration: none;
+	font-family: Arial, Verdana;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: right;
+	padding: 3px 10px 0px 0px;
+	margin: 0px 5px 0px 0px;
+}
+
+.depthome_right .box_bottomlink a:hover
+{
+	display: block;
+	height: 20px;
+	text-decoration: underline;
+	font-family: Arial, Verdana;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: right;
+	padding: 3px 10px 0px 0px;
+	margin: 0px 5px 0px 0px;
+}
+
+.depthome_right .newsbox_wrapper a,
+.depthome_right .eventbox_wrapper a
+{
+	color: #393B3C;
+}
+
+
+
+.mainSpan_wrapper .component_title_review
+{
+	display: none;
+}
+
+
+
+
+
+/**************************************************
+	sIFR CLASSES
+***************************************************/
+
+.sIFR-flash 
+{
+	visibility: visible !important;	
+	margin: 0;
+}
+
+.sIFR-replaced 
+{
+	visibility: hidden !important;
+}
+
+span.sIFR-alternate 
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	display: block;
+	overflow: hidden;
+}
+
+.sIFR-flash + div[adblocktab=true] 
+{
+	display: none !important;
+}
+
+.sIFR-hasFlash h3 
+{
+	visibility: hidden;
+	letter-spacing: -6px;
+}
+
+
+.sIFR-hasFlash .title_noleftnav 
+{
+	visibility: hidden;
+	line-height: 6px;
+}
+
+.sIFR-hasFlash .title 
+{
+	line-height: 18px;
+}
+
+
+.eSignup
+{
+	float: left;
+	width: 208px;
+	height: 145px;
+	background: #efeeee;
+	margin: 30px 0px 20px 0px;
+}
+
+
+.eSignup a
+{
+	display: block;
+	float: left;
+	width: 191px;
+	height: 123px;
+	margin: 12px 0px 0px 8px;
+	background: url(http://www.lexingtonky.gov/_gfx/home/eSignup.jpg) 0 0 no-repeat;
+}
+.eSignup a:hover
+{
+	background: url(http://www.lexingtonky.gov/_gfx/home/eSignup.jpg) 0 -123px no-repeat;
+}
+
+.emergenC
+{
+	float: left;
+	width: 208px;
+	height: 145px;
+	background: #efeeee;
+	margin: 0px 0px 20px 0px;
+}
+
+.emergenC a
+{
+	display: block;
+	float: left;
+	width: 191px;
+	height: 123px;
+	margin: 12px 0px 0px 8px;
+	background: url(http://www.lexingtonky.gov/_gfx/home/emergenC.jpg) 0 0 no-repeat;
+}
+.emergenC a:hover
+{
+	background: url(http://www.lexingtonky.gov/_gfx/home/emergenC.jpg) 0 -123px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/**************************
+        SAFARI 3 hacks
+**************************/
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	.home_events .box_bottomlink a, .home_news .box_bottomlink a
+	{
+		float: left;
+		margin: 0px 0px 0px 135px;
+	}
+
+	.home_events .box_bottomlink a:hover, .home_news .box_bottomlink a:hover
+	{
+		float: left;
+	}
+
+	
+}
+
+/*** mobile view ***/
+#SwitchToMobile
+{
+	background: #fff9a5 url(_gfx/cmn/mobile/mob_visionlink_strip.gif) bottom left repeat-x;
+}
+
+#SwitchToMobile a
+{
+	display: block;
+	background: url(_gfx/cmn/mobile/mob_visionlink_bg.jpg) center bottom no-repeat;
+	text-align: center;
+	font-size: small;
+	color: #000000;
+	padding: 5px 0 4px 0;
+	border: 1px solid #bdbdbd;
+	text-decoration: none;
+}
+
+
+
+/*****************************
+	Firefox3 Specific  (Its sad that we need these now)
+******************************/
+
+
+html>/**/body .home_events .box_bottomlink a, .home_news .box_bottomlink a, x:-moz-any-link, x:default { float: left;	margin: 0px 0px 0px 135px; }
+html>/**/body .home_events .box_bottomlink a:hover, .home_news .box_bottomlink a:hover, x:-moz-any-link, x:default { float: left; }
+
